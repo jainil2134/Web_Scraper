@@ -1,0 +1,774 @@
+{
+    "scan_start_time": "2026-02-27 14:30:37",
+    "target_ip": "17.253.144.10",
+    "target_port": 443,
+    "geo_intel": {
+        "status": "success",
+        "country": "United States",
+        "city": "Cupertino",
+        "isp": "Apple Inc.",
+        "org": "Apple Inc",
+        "as": "AS714 Apple Inc."
+    },
+    "open_ports": [
+        {
+            "port": 80,
+            "service": "http",
+            "banner": "HTTP/1.0 400 Host Header Required\r"
+        },
+        {
+            "port": 443,
+            "service": "https",
+            "banner": "No Banner Responded"
+        },
+        {
+            "port": 21,
+            "service": "ftp",
+            "banner": "Banner Grabbing Failed"
+        },
+        {
+            "port": 1723,
+            "service": "pptp",
+            "banner": "Banner Grabbing Failed"
+        }
+    ],
+    "vpn_status": "VPN Found! Banner: Banner Grabbing Failed",
+    "domain_dates": {
+        "created": "N/A"
+    },
+    "findings": {
+        "http_headers": {
+            "Content-Length": "39433",
+            "Server": "Apple",
+            "Content-Type": "text/html; charset=utf-8",
+            "Set-Cookie": "geo=IN; path=/; domain=.apple.com",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Vary": "Accept-Encoding",
+            "Content-Security-Policy": "default-src 'self' blob: data: *.akamaized.net *.apple.com *.apple-mapkit.com *.cdn-apple.com *.organicfruitapps.com; child-src blob: mailto: embed.music.apple.com embed.podcasts.apple.com https://recyclingprogram.apple.com https://smb.apple.com https://nova.apple.com swdlp.apple.com www.apple.com www.instagram.com platform.twitter.com www.youtube-nocookie.com; img-src 'unsafe-inline' blob: data: *.apple.com *.apple-mapkit.com *.cdn-apple.com *.mzstatic.com; script-src 'unsafe-inline' 'unsafe-eval' blob: *.apple.com *.apple-mapkit.com www.instagram.com platform.twitter.com; style-src 'unsafe-inline' *.apple.com",
+            "Referrer-Policy": "no-referrer-when-downgrade",
+            "Strict-Transport-Security": "max-age=31536000; includeSubdomains; preload",
+            "X-Content-Type-Options": "nosniff",
+            "X-Xss-Protection": "1; mode=block",
+            "Cache-Control": "max-age=295",
+            "Expires": "Fri, 27 Feb 2026 09:05:32 GMT",
+            "Date": "Fri, 27 Feb 2026 09:00:37 GMT"
+        },
+        "server_software": "Apple",
+        "operating_system": "Hidden",
+        "comments": [],
+        "proxy_detected": "No Proxy Found",
+        "security_header_audit": {
+            "Strict-Transport-Security": "max-age=31536000; includeSubdomains; preload",
+            "Content-Security-Policy": "default-src 'self' blob: data: *.akamaized.net *.apple.com *.apple-mapkit.com *.cdn-apple.com *.organicfruitapps.com; child-src blob: mailto: embed.music.apple.com embed.podcasts.apple.com https://recyclingprogram.apple.com https://smb.apple.com https://nova.apple.com swdlp.apple.com www.apple.com www.instagram.com platform.twitter.com www.youtube-nocookie.com; img-src 'unsafe-inline' blob: data: *.apple.com *.apple-mapkit.com *.cdn-apple.com *.mzstatic.com; script-src 'unsafe-inline' 'unsafe-eval' blob: *.apple.com *.apple-mapkit.com www.instagram.com platform.twitter.com; style-src 'unsafe-inline' *.apple.com"
+        }
+    },
+    "sub_urls": [
+        "https://www.apple.com/"
+    ],
+    "external_connections": [
+        "account.apple.com",
+        "apps.apple.com",
+        "card.apple.com",
+        "fitness.apple.com",
+        "investor.apple.com",
+        "locate.apple.com",
+        "music.apple.com",
+        "support.apple.com",
+        "tv.apple.com",
+        "wallet.apple.com",
+        "www.apple.com",
+        "www.icloud.com"
+    ],
+    "navigation_map": [
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/",
+            "text": "Apple"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/store",
+            "text": "Store"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/mac/",
+            "text": "Mac"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/ipad/",
+            "text": "iPad"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/iphone/",
+            "text": "iPhone"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/watch/",
+            "text": "Watch"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-vision-pro/",
+            "text": "Vision"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/airpods/",
+            "text": "AirPods"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/tv-home/",
+            "text": "TV & Home"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/entertainment/",
+            "text": "Entertainment"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/buy_accessories",
+            "text": "Accessories"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://support.apple.com/?cid=gn-ols-home-hp-tab",
+            "text": "Support"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/search",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/bag",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/iphone/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/iphone/",
+            "text": "Learn more"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/buy_iphone",
+            "text": "Shop iPhone"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/ipad-air/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/ipad-air/",
+            "text": "Learn more"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/buy_ipad/ipad_air",
+            "text": "Buy"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://tv.apple.com/us/show/monarch-legacy-of-monsters/umc.cmc.62l8x0ixrhyq3yaqa5y8yo7ew?itscg=10000&itsct=atv-apl_hp-stream_now-monarchs2-260227",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://tv.apple.com/us/show/monarch-legacy-of-monsters/umc.cmc.62l8x0ixrhyq3yaqa5y8yo7ew?itscg=10000&itsct=atv-apl_hp-stream_now-monarchs2-260227",
+            "text": "Stream now"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/macbook-pro/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/macbook-pro/",
+            "text": "Learn more"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/buy_mac/macbook_pro/14_inch",
+            "text": "Buy"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-watch-series-11/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-watch-series-11/",
+            "text": "Learn more"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/buy_watch/apple_watch_series_11",
+            "text": "Buy"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/product/MHUK4",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/product/MHUK4",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/airpods-pro/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/airpods-pro/",
+            "text": "Learn more"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/buy_airpods/airpods_pro_3",
+            "text": "Buy"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/trade_in",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/trade_in",
+            "text": "Get your estimate"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-card/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-card/",
+            "text": "Learn more"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://card.apple.com/apply/application?referrer=cid%3Dapy-200-10000036&start=false",
+            "text": "Apply now"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://wallet.apple.com/apple-card/setup/feature/ccs?referrer=cid%3Dapy-200-10000036",
+            "text": "Apply now"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/#endless-entertainment-gallery-item-1",
+            "text": "Item 1"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/#endless-entertainment-gallery-item-2",
+            "text": "Item 2"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/#endless-entertainment-gallery-item-3",
+            "text": "Item 3"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/#endless-entertainment-gallery-item-4",
+            "text": "Item 4"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/#endless-entertainment-gallery-item-5",
+            "text": "Item 5"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/#endless-entertainment-gallery-item-6",
+            "text": "Item 6"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/#endless-entertainment-gallery-item-7",
+            "text": "Item 7"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/#endless-entertainment-gallery-item-8",
+            "text": "Item 8"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/#endless-entertainment-gallery-item-9",
+            "text": "Item 9"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://tv.apple.com/us/show/the-last-thing-he-told-me/umc.cmc.5dkcy23fuhcdhw1zcmqn10rc5?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+            "text": "Stream now\nMysteryNew season."
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://tv.apple.com/us/show/shrinking/umc.cmc.apzybj6eqf6pzccd97kev7bs?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+            "text": "Stream now\nComedyGetting it together. Together."
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://tv.apple.com/us/movie/eternity/umc.cmc.4dlymcfscta2oo4u1whkzaqpl?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+            "text": "Stream now\nRomanceDo you believe in love after life?"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://tv.apple.com/us/channel/mls/tvs.sbd.7000?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+            "text": "MLS on Apple\u00a0TV\nWatch every club, every match, live\u2014all season long."
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://tv.apple.com/us/show/hijack/umc.cmc.1dg08zn0g3zx52hs8npoj5qe3?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+            "text": "Stream now\nThrillerWho can you trust when it\u2019s all on the line?"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://tv.apple.com/us/show/tehran/umc.cmc.337cdk1ou0bmn6frmzxwm7xqd?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+            "text": "Stream now\nThrillerA secret agent embarks on her most dangerous mission yet."
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://tv.apple.com/us/show/pluribus/umc.cmc.37axgovs2yozlyh3c2cmwzlza?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+            "text": "Stream now\nDramaHappiness is a state of mind."
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://tv.apple.com/us/movie/f1-the-movie/umc.cmc.3t6dvnnr87zwd4wmvpdx5came?l=en-US?itscg=10000&itsct=atv-apl_hp-stream_now--220622",
+            "text": "Stream now\nAction4 Oscar\u00ae Nominations Including Best Picture"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://fitness.apple.com/us/workout/core-with-gregg/1870919406?itscg=10000&itsct=afp-apl_hp-watch_now--240326",
+            "text": "Watch now\nCore with Gregg"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://music.apple.com/us/station/sabrina-carpenter-the-zane-lowe-interview/ra.1837392419?itscg=10000&itsct=am-apl_hp-listen_now--240326",
+            "text": "Sabrina Carpenter: The Zane Lowe Interview\n\n\n\n\n\n\nListen now\nSabrina Carpenter: The Zane Lowe Interview"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://apps.apple.com/us/app/hello-kitty-island-adventure/id1553505132?itscg=10000&itsct=aa-apl_hp-play_now--240326",
+            "text": "Play now\nHello Kitty Island Adventure"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://fitness.apple.com/us/studio-collection/bad-bunny/1658160018?itscg=10000&itsct=afp-apl_hp-watch_now--240326",
+            "text": "Watch now\nBad Bunny"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://music.apple.com/us/playlist/a-list-pop/pl.5ee8333dbe944d9f9151e97d92d1ead9?itscg=10000&itsct=am-apl_hp-listen_now--240326",
+            "text": "A-List Pop\n\n\n\n\n\n\nListen now\nA-List Pop"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://apps.apple.com/us/app/powerwash-simulator/id6477445344?itscg=10000&itsct=aa-apl_hp-play_now--240326",
+            "text": "Play now\nPowerWash Simulator"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://fitness.apple.com/us/studio-collection/black-history-month/1790481637?itscg=10000&itsct=afp-apl_hp-watch_now--240326",
+            "text": "Watch now\nBlack History Month"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://music.apple.com/us/playlist/new-music-daily/pl.2b0e6e332fdf4b7a91164da3162127b5?itscg=10000&itsct=am-apl_hp-listen_now--240326",
+            "text": "New Music Daily\n\n\n\n\n\n\nListen now\nNew Music Daily"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://apps.apple.com/us/app/spongebob-patty-pursuit-2/id6472008605?itscg=10000&itsct=aa-apl_hp-play_now--240326",
+            "text": "Play now\nSpongeBob: Patty Pursuit 2"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://support.apple.com/kb/HT209218",
+            "text": "support.apple.com/kb/HT209218"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/store",
+            "text": "Store"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/mac/",
+            "text": "Mac"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/ipad/",
+            "text": "iPad"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/iphone/",
+            "text": "iPhone"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/watch/",
+            "text": "Watch"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-vision-pro/",
+            "text": "Vision"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/airpods/",
+            "text": "AirPods"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/tv-home/",
+            "text": "TV & Home"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/airtag/",
+            "text": "AirTag"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/buy_accessories",
+            "text": "Accessories"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/giftcards",
+            "text": "Gift Cards"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/wallet/",
+            "text": "Wallet"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-card/",
+            "text": "Apple\u00a0Card"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-pay/",
+            "text": "Apple\u00a0Pay"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-cash/",
+            "text": "Apple\u00a0Cash"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://account.apple.com/",
+            "text": "Manage Your Apple Account"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/account",
+            "text": "Apple Store Account"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.icloud.com",
+            "text": "iCloud.com"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-one/",
+            "text": "Apple\u00a0One"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-tv/",
+            "text": "Apple\u00a0TV"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-music/",
+            "text": "Apple\u00a0Music"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-arcade/",
+            "text": "Apple\u00a0Arcade"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-fitness-plus/",
+            "text": "Apple\u00a0Fitness+"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-news/",
+            "text": "Apple\u00a0News+"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-podcasts/",
+            "text": "Apple Podcasts"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-books/",
+            "text": "Apple\u00a0Books"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/app-store/",
+            "text": "App\u00a0Store"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/retail/",
+            "text": "Find a Store"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/retail/geniusbar/",
+            "text": "Genius Bar"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/today/",
+            "text": "Today at Apple"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/today/groups/",
+            "text": "Group Reservations"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/today/camp/",
+            "text": "Apple Camp"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://apps.apple.com/us/app/apple-store/id375380948",
+            "text": "Apple Store App"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/special_deals",
+            "text": "Certified Refurbished"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/trade_in",
+            "text": "Apple\u00a0Trade\u00a0In"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/payment_plan",
+            "text": "Financing"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/buy_iphone/carrier_offers",
+            "text": "Carrier Deals at Apple"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/order/list",
+            "text": "Order Status"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/help",
+            "text": "Shopping Help"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/business/",
+            "text": "Apple and Business"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/retail/business/",
+            "text": "Shop for Business"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/education/",
+            "text": "Apple and Education"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/education/k12/how-to-buy/",
+            "text": "Shop for K-12"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/educationrouting",
+            "text": "Shop for College"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/healthcare/",
+            "text": "Apple and Healthcare"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/government/",
+            "text": "Apple and Government"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/eppstore/veteransandmilitary",
+            "text": "Shop for Veterans and Military"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us_epp_67909/store",
+            "text": "Shop for State and Local Employees"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us_epp_55499/store",
+            "text": "Shop for Federal Employees"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/accessibility/",
+            "text": "Accessibility"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/education-initiative/",
+            "text": "Education"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/environment/",
+            "text": "Environment"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/diversity/",
+            "text": "Inclusion and Diversity"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/privacy/",
+            "text": "Privacy"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/racial-equity-justice-initiative/",
+            "text": "Racial Equity and Justice"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/supply-chain/",
+            "text": "Supply Chain Innovation"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/newsroom/",
+            "text": "Newsroom"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/leadership/",
+            "text": "Apple Leadership"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/careers/us/",
+            "text": "Career Opportunities"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://investor.apple.com/",
+            "text": "Investors"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/compliance/",
+            "text": "Ethics & Compliance"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/apple-events/",
+            "text": "Events"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/contact/",
+            "text": "Contact Apple"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/retail/",
+            "text": "Find an Apple Store"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://locate.apple.com/",
+            "text": "other retailer"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "tel:1-800-692-7753",
+            "text": "1-800-MY-APPLE"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/choose-country-region/",
+            "text": "United States"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/legal/privacy/",
+            "text": "Privacy Policy"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/legal/internet-services/terms/site.html",
+            "text": "Terms of Use"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/us/shop/goto/help/sales_refunds",
+            "text": "Sales and Refunds"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/legal/",
+            "text": "Legal"
+        },
+        {
+            "from": "https://www.apple.com/",
+            "to": "https://www.apple.com/sitemap/",
+            "text": "Site Map"
+        }
+    ]
+}
