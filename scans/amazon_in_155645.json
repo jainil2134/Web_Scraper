@@ -1,0 +1,71 @@
+{
+    "scan_start_time": "2026-02-27 15:56:48",
+    "target_ip": "3.253.176.101",
+    "target_port": 443,
+    "geo_intel": {
+        "status": "success",
+        "country": "Ireland",
+        "city": "Dublin",
+        "isp": "Amazon Technologies Inc.",
+        "org": "Amazon Technologies Inc. (eu-west-1)",
+        "as": "AS16509 Amazon.com, Inc."
+    },
+    "open_ports": [
+        {
+            "port": 443,
+            "service": "https",
+            "banner": "HTTP/1.1 400 Bad Request\r"
+        },
+        {
+            "port": 80,
+            "service": "http",
+            "banner": "HTTP/1.1 301 Moved Permanently\r"
+        },
+        {
+            "port": 21,
+            "service": "ftp",
+            "banner": "Banner Grabbing Failed"
+        },
+        {
+            "port": 1723,
+            "service": "pptp",
+            "banner": "Banner Grabbing Failed"
+        }
+    ],
+    "vpn_status": "VPN Found! Banner: Banner Grabbing Failed",
+    "domain_dates": {
+        "created": "N/A"
+    },
+    "findings": {
+        "http_headers": {
+            "Content-Length": "2008",
+            "Server": "CloudFront",
+            "Date": "Fri, 27 Feb 2026 10:26:48 GMT",
+            "X-Amzn-Waf-Action": "challenge",
+            "Cache-Control": "no-store, max-age=0",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Max-Age": "86400",
+            "Access-Control-Allow-Methods": "OPTIONS,GET,POST",
+            "Access-Control-Expose-Headers": "x-amzn-waf-action",
+            "X-Cache": "Error from cloudfront",
+            "Via": "1.1 0d0c9a98d2447493d68e84893d87f91a.cloudfront.net (CloudFront)",
+            "X-Amz-Cf-Pop": "BOM54-P1",
+            "Alt-Svc": "h3=\":443\"; ma=86400",
+            "X-Amz-Cf-Id": "AP5taX2ab5egwnTlK38DU48uMKRP8AB-rHqveVAhjUXr3cfEClqyvA=="
+        },
+        "server_software": "CloudFront",
+        "operating_system": "Hidden",
+        "comments": [],
+        "proxy_detected": "Proxy Detected (via)",
+        "security_header_audit": {
+            "Strict-Transport-Security": "MISSING",
+            "Content-Security-Policy": "MISSING"
+        }
+    },
+    "sub_urls": [
+        "https://www.amazon.in/"
+    ],
+    "external_connections": [],
+    "navigation_map": []
+}

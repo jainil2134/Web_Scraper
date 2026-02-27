@@ -41,11 +41,23 @@ class ScanRequest(BaseModel):
 jobs = {}
 
 
-# Load the existing Scrapy-based backend implementation from scans/updated_file.py
+# Attempt to load the existing Scrapy-based backend implementation from scans/updated_file.py
 _updated_path = os.path.join(os.path.dirname(__file__), 'scans', 'updated_file.py')
-spec = importlib.util.spec_from_file_location('updated_file', _updated_path)
-updated = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(updated)
+updated = None
+supports_fullscan = False
+if os.path.exists(_updated_path):
+    try:
+        spec = importlib.util.spec_from_file_location('updated_file', _updated_path)
+        updated = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(updated)
+        supports_fullscan = True
+    except Exception:
+        updated = None
+        supports_fullscan = False
+else:
+    # updated_file.py not present; full Scrapy-based scans are unavailable
+    updated = None
+    supports_fullscan = False
 
 
 def _run_full_scan(job_id: str, user_url: str):
@@ -110,7 +122,12 @@ def _run_full_scan(job_id: str, user_url: str):
 
 @app.post('/api/fullscan')
 async def start_fullscan(request: ScanRequest):
-    """Start a full Scrapy-based scan in a background thread. Returns a job_id to poll."""
+    """Start a full Scrapy-based scan in a background thread. Returns a job_id to poll.
+    If the backend `scans/updated_file.py` is missing, return 503 with a helpful message.
+    """
+    if not supports_fullscan:
+        return JSONResponse({'error': 'fullscan backend not available on server (scans/updated_file.py missing)'}, status_code=503)
+
     job_id = uuid.uuid4().hex
     jobs[job_id] = {'status': 'running'}
     thread = threading.Thread(target=_run_full_scan, args=(job_id, request.url), daemon=True)

@@ -1,0 +1,2391 @@
+{
+    "scan_start_time": "2026-02-27 15:55:51",
+    "target_ip": "13.249.165.75",
+    "target_port": 443,
+    "geo_intel": {
+        "status": "success",
+        "country": "Japan",
+        "city": "Chiyoda City",
+        "isp": "Amazon.com, Inc.",
+        "org": "AWS CloudFront (GLOBAL)",
+        "as": "AS16509 Amazon.com, Inc."
+    },
+    "open_ports": [
+        {
+            "port": 80,
+            "service": "http",
+            "banner": "HTTP/1.1 400 Bad Request\r"
+        },
+        {
+            "port": 21,
+            "service": "ftp",
+            "banner": "Banner Grabbing Failed"
+        },
+        {
+            "port": 1723,
+            "service": "pptp",
+            "banner": "Banner Grabbing Failed"
+        },
+        {
+            "port": 443,
+            "service": "https",
+            "banner": "Banner Grabbing Failed"
+        }
+    ],
+    "vpn_status": "VPN Found! Banner: Banner Grabbing Failed",
+    "domain_dates": {
+        "created": "N/A"
+    },
+    "findings": {
+        "http_headers": {
+            "Content-Type": "text/html;charset=utf-8",
+            "Server": "Apache",
+            "X-Dispatcher": "dispatcher5westus2",
+            "X-Vhost": "publish",
+            "X-Content-Type-Options": "nosniff",
+            "Last-Modified": "Fri, 27 Feb 2026 06:57:35 GMT",
+            "Etag": "\"bdb77-64bc8c086ac17-gzip\"",
+            "Accept-Ranges": "bytes",
+            "X-Akamai-Transformed": "0 - 0 -",
+            "Cache-Control": "max-age=895",
+            "Expires": "Fri, 27 Feb 2026 10:40:47 GMT",
+            "Date": "Fri, 27 Feb 2026 10:25:52 GMT",
+            "Vary": "Accept-Encoding",
+            "Set-Cookie": "aka_client_code=IN-en",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Strict-Transport-Security": "max-age=600",
+            "Akamai-Grn": "0.341cc517.1772187952.c4aca43d",
+            "Server-Timing": "ak_p; desc=\"1772187952561_398793780_3299648573_27_8447_15_27_-\";dur=1"
+        },
+        "server_software": "Apache",
+        "operating_system": "Hidden",
+        "comments": [],
+        "proxy_detected": "No Proxy Found",
+        "security_header_audit": {
+            "Strict-Transport-Security": "max-age=600",
+            "Content-Security-Policy": "MISSING"
+        }
+    },
+    "sub_urls": [
+        "https://www.hp.com/in-en/home.html"
+    ],
+    "external_connections": [
+        "account.id.hp.com",
+        "anyware.hp.com",
+        "cs-apj.ext.hp.com",
+        "developers.hp.com",
+        "global-navbar-backend.id.hp.com",
+        "gncpgslbpro1.houston.hp.com",
+        "h20195.www2.hp.com",
+        "h30434.www3.hp.com",
+        "h41201.www4.hp.com",
+        "investor.hp.com",
+        "jobs.hp.com",
+        "locator.hp.com",
+        "partner.hp.com",
+        "parts.hp.com",
+        "reinvent.hp.com",
+        "store.hp.com",
+        "support.hp.com",
+        "www.facebook.com",
+        "www.hp.com",
+        "www.hpcreatorsgarage.com",
+        "www.hpworldstores.in",
+        "www.instagram.com",
+        "www.printlearncenter.com",
+        "www.twitter.com",
+        "youtube.com"
+    ],
+    "navigation_map": [
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html#skiptobody",
+            "text": "Skip to Content"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html#skiptofooter",
+            "text": "Skip to Footer"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0)",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/checkout/cart/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://global-navbar-backend.id.hp.com/api/v1/session/login?final_redirect_url=",
+            "text": "Sign in"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://account.id.hp.com/",
+            "text": "My HP account"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/dashboard",
+            "text": "Support Dashboard\n                                                Support Dashboard"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://global-navbar-backend.id.hp.com/api/v1/session/logout?final_redirect_url=",
+            "text": "Sign out\n                                            \n                                                Sign out"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/poly.html",
+            "text": "Poly"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/security/endpoint-security-solutions.html",
+            "text": "Security"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.printlearncenter.com/",
+            "text": "Print Learn Center"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/us-en/printers/3d-printers.html",
+            "text": "3D print"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/smb/small-and-medium-business-solutions.html",
+            "text": "Small & medium business"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/solutions/education/k12/overview.html",
+            "text": "Education"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hpcreatorsgarage.com",
+            "text": "Creator's Garage"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/work-relationship-index.html",
+            "text": "Work Relationship Index"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/software/microsoft-copilot-pcs-for-business.html",
+            "text": "Copilot+ PCs"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/ai-solutions/next-gen-ai-pcs.html",
+            "text": "Next-Gen AI PCs"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/laptops-and-2-in-1s.html",
+            "text": "Laptops"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/desktops-and-all-in-ones.html",
+            "text": "Desktops"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/business-computers.html",
+            "text": "Business Computers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/gaming-pc.html",
+            "text": "Gaming"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/monitors-accessories/computer-monitors.html",
+            "text": "Monitors"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/monitors-accessories/computer-accessories.html",
+            "text": "Accessories"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/workstations/workstation-pcs.html",
+            "text": "Workstations"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/solutions/pos-systems.html#All-in-OneSystems",
+            "text": "Retail Solutions"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/cartridge/ink-toner-paper.html",
+            "text": "Ink & toner cartridges"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/home-printers.html",
+            "text": "Home printers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/business-printers.html",
+            "text": "Home office & Business printers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/enterprise-printers.html",
+            "text": "Enterprise printers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/refillable-tanks.html",
+            "text": "Tank printers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/scanners.html",
+            "text": "Scanners"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/large-format.html",
+            "text": "Large-format printers & plotters"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/industrial-digital-presses.html",
+            "text": "Industrial presses"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/managed-print-services.html",
+            "text": "Managed print services"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/workforce-solutions.html",
+            "text": "Services & Solutions"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/workforce-solutions/workforce-computing.html",
+            "text": "Computing Services"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/workforce-solutions/document-printing.html",
+            "text": "Document & Print Services"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/workforce-solutions/communication-collaboration.html",
+            "text": "Collaboration Solutions"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/workforce-solutions/workforce-security-solution.html",
+            "text": "Security Solutions"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/",
+            "text": "HP Store Home"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/promotion/offer",
+            "text": "Deals / Sale"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/business-solutions.html",
+            "text": "Business Solutions"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/corporate-employee-program",
+            "text": "Corporate Employee purchase"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/carepackfinder",
+            "text": "Carepacks"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/tech-takes",
+            "text": "Buying guides"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/software/microsoft-copilot-pcs-for-business.html",
+            "text": "Copilot+ PCs"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets/personal-laptops.html",
+            "text": "Laptops for Home"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets/business-laptops.html",
+            "text": "Laptops for Business"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets/premium-computing.html",
+            "text": "Premium Laptops"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets/laptop-gaming.html",
+            "text": "Gaming Laptops"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets/laptop-promotions.html",
+            "text": "Laptops on Sale"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets.html",
+            "text": "View ALL laptops"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/desktops.html",
+            "text": "Desktops"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/desktops/desktop-promotions.html",
+            "text": "Desktops on Sale"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers/personal-and-home-printers.html",
+            "text": "Printers for Home"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers/business-printers.html",
+            "text": "Printers for Business"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers/business-printers.html",
+            "text": "Printers on Sale"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/smartfinder/findmyprinter",
+            "text": "Printer Finder"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers.html",
+            "text": "View ALL printers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/ink-toner-paper",
+            "text": "Ink & Toner"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/monitors/personal-monitors.html",
+            "text": "Monitors for Home"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/monitors/business-monitors.html",
+            "text": "Monitors for Work"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/monitors.html",
+            "text": "View ALL Monitors"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/accessories.html",
+            "text": "Accessories"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/accessories.html?subbrand=hyperx",
+            "text": "HyperX Accessories"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/accessories/accessories-gaming.html",
+            "text": "Gaming Accessories"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en",
+            "text": "Support & troubleshooting"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/drivers",
+            "text": "Software & drivers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/topic/diagnostics",
+            "text": "Diagnostic tools"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://h30434.www3.hp.com/",
+            "text": "Community"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/topic/windows-10-support-center",
+            "text": "Windows 10 / Windows 11 Support"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/printer",
+            "text": "Printing"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/computer",
+            "text": "Computing"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/poly",
+            "text": "Poly Collaboration Devices"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://anyware.hp.com/",
+            "text": "HP Anyware"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/products",
+            "text": "Other Products"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/contact-hp/contact.html",
+            "text": "Contact us"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/checkwarranty",
+            "text": "Check warranty"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/service-center",
+            "text": "Authorized service providers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/security-bulletins",
+            "text": "Security bulletin archive"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://parts.hp.com/hpparts/countrychoice.aspx",
+            "text": "Parts store"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/consumer/services-overview.html",
+            "text": "Consumer services"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/contact-us",
+            "text": "Contact Store Support"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/sales/guest/form",
+            "text": "Track my order"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/faqs",
+            "text": "Store FAQ"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/carepack.html",
+            "text": "Carepacks"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/returns",
+            "text": "Return policy"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/payments",
+            "text": "Payment"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/howtoorder",
+            "text": "How to order"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0)",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0)",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0)",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html#skiptobody",
+            "text": "Skip to Content"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html#skiptofooter",
+            "text": "Skip to Footer"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0)",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0)",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0)",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/checkout/cart/",
+            "text": "Shopping Cart"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0);",
+            "text": "Close Shopping Cart popup"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://global-navbar-backend.id.hp.com/api/v1/session/login?final_redirect_url=",
+            "text": "Sign in"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://account.id.hp.com/",
+            "text": "My HP account"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/dashboard",
+            "text": "Support Dashboard\n                                                            Support Dashboard"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://global-navbar-backend.id.hp.com/api/v1/session/logout?final_redirect_url=",
+            "text": "Sign out\n                                                        \n                                                            Sign out"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/poly.html",
+            "text": "Poly"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/security/endpoint-security-solutions.html",
+            "text": "Security"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.printlearncenter.com/",
+            "text": "Print Learn Center"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/us-en/printers/3d-printers.html",
+            "text": "3D print"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/smb/small-and-medium-business-solutions.html",
+            "text": "Small & medium business"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/solutions/education/k12/overview.html",
+            "text": "Education"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hpcreatorsgarage.com",
+            "text": "Creator's Garage"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/work-relationship-index.html",
+            "text": "Work Relationship Index"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/software/microsoft-copilot-pcs-for-business.html",
+            "text": "Copilot+ PCs"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/ai-solutions/next-gen-ai-pcs.html",
+            "text": "Next-Gen AI PCs"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/laptops-and-2-in-1s.html",
+            "text": "Laptops"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/desktops-and-all-in-ones.html",
+            "text": "Desktops"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/business-computers.html",
+            "text": "Business Computers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/gaming-pc.html",
+            "text": "Gaming"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/monitors-accessories/computer-monitors.html",
+            "text": "Monitors"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/monitors-accessories/computer-accessories.html",
+            "text": "Accessories"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/workstations/workstation-pcs.html",
+            "text": "Workstations"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/solutions/pos-systems.html#All-in-OneSystems",
+            "text": "Retail Solutions"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/cartridge/ink-toner-paper.html",
+            "text": "Ink & toner cartridges"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/home-printers.html",
+            "text": "Home printers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/business-printers.html",
+            "text": "Home office & Business printers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/enterprise-printers.html",
+            "text": "Enterprise printers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/refillable-tanks.html",
+            "text": "Tank printers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/scanners.html",
+            "text": "Scanners"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/large-format.html",
+            "text": "Large-format printers & plotters"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/industrial-digital-presses.html",
+            "text": "Industrial presses"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/managed-print-services.html",
+            "text": "Managed print services"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/workforce-solutions.html",
+            "text": "Services & Solutions"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/workforce-solutions/workforce-computing.html",
+            "text": "Computing Services"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/workforce-solutions/document-printing.html",
+            "text": "Document & Print Services"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/workforce-solutions/communication-collaboration.html",
+            "text": "Collaboration Solutions"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/workforce-solutions/workforce-security-solution.html",
+            "text": "Security Solutions"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/",
+            "text": "HP Store Home"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/promotion/offer",
+            "text": "Deals / Sale"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/business-solutions.html",
+            "text": "Business Solutions"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/corporate-employee-program",
+            "text": "Corporate Employee purchase"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/carepackfinder",
+            "text": "Carepacks"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/tech-takes",
+            "text": "Buying guides"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/software/microsoft-copilot-pcs-for-business.html",
+            "text": "Copilot+ PCs"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets/personal-laptops.html",
+            "text": "Laptops for Home"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets/business-laptops.html",
+            "text": "Laptops for Business"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets/premium-computing.html",
+            "text": "Premium Laptops"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets/laptop-gaming.html",
+            "text": "Gaming Laptops"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets/laptop-promotions.html",
+            "text": "Laptops on Sale"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets.html",
+            "text": "View ALL laptops"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/desktops.html",
+            "text": "Desktops"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/desktops/desktop-promotions.html",
+            "text": "Desktops on Sale"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers/personal-and-home-printers.html",
+            "text": "Printers for Home"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers/business-printers.html",
+            "text": "Printers for Business"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers/business-printers.html",
+            "text": "Printers on Sale"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/smartfinder/findmyprinter",
+            "text": "Printer Finder"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers.html",
+            "text": "View ALL printers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/ink-toner-paper",
+            "text": "Ink & Toner"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/monitors/personal-monitors.html",
+            "text": "Monitors for Home"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/monitors/business-monitors.html",
+            "text": "Monitors for Work"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/monitors.html",
+            "text": "View ALL Monitors"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/accessories.html",
+            "text": "Accessories"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/accessories.html?subbrand=hyperx",
+            "text": "HyperX Accessories"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/accessories/accessories-gaming.html",
+            "text": "Gaming Accessories"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en",
+            "text": "Support & troubleshooting"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/drivers",
+            "text": "Software & drivers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/topic/diagnostics",
+            "text": "Diagnostic tools"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://h30434.www3.hp.com/",
+            "text": "Community"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/topic/windows-10-support-center",
+            "text": "Windows 10 / Windows 11 Support"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/printer",
+            "text": "Printing"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/computer",
+            "text": "Computing"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/poly",
+            "text": "Poly Collaboration Devices"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://anyware.hp.com/",
+            "text": "HP Anyware"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/products",
+            "text": "Other Products"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/contact-hp/contact.html",
+            "text": "Contact us"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/checkwarranty",
+            "text": "Check warranty"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/service-center",
+            "text": "Authorized service providers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/security-bulletins",
+            "text": "Security bulletin archive"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://parts.hp.com/hpparts/countrychoice.aspx",
+            "text": "Parts store"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/consumer/services-overview.html",
+            "text": "Consumer services"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/contact-us",
+            "text": "Contact Store Support"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/sales/guest/form",
+            "text": "Track my order"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/faqs",
+            "text": "Store FAQ"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/carepack.html",
+            "text": "Carepacks"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/returns",
+            "text": "Return policy"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/payments",
+            "text": "Payment"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/howtoorder",
+            "text": "How to order"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html#",
+            "text": "See all"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html#skiptobody",
+            "text": "Skip to\n                    Content"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html#skiptofooter",
+            "text": "Skip to\n                    Footer"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0)",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0)",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0)",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/hp-world-store-benefits.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hpworldstores.in/",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/future-of-learning.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers/home-and-home-office-printers.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/laptops-and-2-in-1s/omnibook-5-ai-pc.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets/personal-laptops/omnibook-5-laptops.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/gaming-pc/laptops/2025-omen-max16-intel.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/omen-max-gaming-laptop-16-ah0076tx-b90kqpa.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/smart-tank.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers.html?subbrand=smart-tank",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/laptops/business/elitebooks/ultra-ai-pc.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/laptops-tablets/business-laptops/elitebook-ultra-laptops.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/software/microsoft-copilot-pcs-for-home.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/hp-omnibook-x-flipngai-14-fm0100tu-c1rb2pa.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/software/microsoft-copilot-pcs-for-home.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/hp-omnibook-x-flipngai-14-fm0100tu-c1rb2pa.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/smart-tank.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers/personal-and-home-printers/ink-tank-system.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/smart-tank.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers.html?subbrand=smart-tank",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/neverstop-laser.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers/business-printers.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/laserjet-printers.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers.html?hp_facet_subbrand=LaserJet",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/enterprise-printers.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/printers/large-format.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/printers/business-printers/designjet.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/laptops-and-2-in-1s.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/hp-laptop-family#home",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/desktops-and-all-in-ones.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/hp-desktop-family#home",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/gaming.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/gaming.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/laptops/business-laptops-and-2-in-1s.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/hp-laptop-family#business",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/desktops/business-desktops.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/hp-desktop-family#business",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/workstations/workstation-pcs.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/business-solutions.html?subbrand=z-by-hp",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/monitors-accessories/computer-monitors.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/monitors.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/accessories/mice-keyboards.html?hp_facet_sub_category=Mice",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/accessories/keyboards.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/accessories/speakers-audio.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/accessories/docks.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/accessories/cases-sleeves.html",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/business/hp-for-business.html",
+            "text": "Learn"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://reinvent.hp.com/IN-small-business-contact-us",
+            "text": "Request a call back"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/",
+            "text": "Shop"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0)",
+            "text": "Related links"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/services/consumer/services-overview.html",
+            "text": "HP Consumer Tech Support & Hardware"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/",
+            "text": "HP India's Official Store"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/hp-for-business",
+            "text": "HP Business Solutions - Laptops, Desktops & More"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/hp-laptops",
+            "text": "HP Laptops - Latest Models & Features"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/education-store",
+            "text": "HP Student Store"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/hp-information/recalls.html",
+            "text": "Replacement programs and product recalls"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/faqs",
+            "text": "Frequently Asked Questions"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/hp-advantage",
+            "text": "HP.com Advantage"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/corporate-employee-store",
+            "text": "HP Corporate Employee Store"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/hp-for-home",
+            "text": "HP for Home"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0);",
+            "text": "Close Country/Region Selector Dialog"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0);",
+            "text": "Europe, Middle East and Africa"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/emea_africa-en/home.html",
+            "text": "Africa"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/emea_africa-fr/home.html",
+            "text": "Afrique"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/be-nl/home.html",
+            "text": "Belgi\u00eb"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/be-fr/home.html",
+            "text": "Belgique"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/cz-cs/home.html",
+            "text": "\u010cesk\u00e1 republika"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/dk-da/home.html",
+            "text": "Danmark"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/de-de/home.html",
+            "text": "Deutschland"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ee-et/home.html",
+            "text": "Eesti"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/es-es/home.html",
+            "text": "Espa\u00f1a"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/fr-fr/home.html",
+            "text": "France"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/hr-hr/home.html",
+            "text": "Hrvatska"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ie-en/home.html",
+            "text": "Ireland"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/it-it/home.html",
+            "text": "Italia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/lv-lv/home.html",
+            "text": "Latvija"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/lt-lt/home.html",
+            "text": "Lietuva"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/hu-hu/home.html",
+            "text": "Magyarorsz\u00e1g"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/emea_middle_east-en/home.html",
+            "text": "Middle East"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/nl-nl/home.html",
+            "text": "Nederland"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ng-en/home.html",
+            "text": "Nigeria"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/no-no/home.html",
+            "text": "Norge"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/at-de/home.html",
+            "text": "\u00d6sterreich"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/pl-pl/home.html",
+            "text": "Polska"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/pt-pt/home.html",
+            "text": "Portugal"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ro-ro/home.html",
+            "text": "Rom\u00e2nia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/sa-en/home.html",
+            "text": "Saudi Arabia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/si-sl/home.html",
+            "text": "Slovenija"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/sk-sk/home.html",
+            "text": "Slovensko"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/za-en/home.html",
+            "text": "South Africa"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ch-fr/home.html",
+            "text": "Suisse"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/fi-fi/home.html",
+            "text": "Suomi"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/se-sv/home.html",
+            "text": "Sverige"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ch-de/home.html",
+            "text": "Switzerland"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/tr-tr/home.html",
+            "text": "T\u00fcrkiye"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/gb-en/home.html",
+            "text": "United Kingdom"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/gr-el/home.html",
+            "text": "\u0395\u03bb\u03bb\u03ac\u03b4\u03b1"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/bg-bg/home.html",
+            "text": "\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/kz-ru/home.html",
+            "text": "\u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/rs-sr/home.html",
+            "text": "\u0421\u0440\u0431\u0438\u0458\u0430"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ua-uk/home.html",
+            "text": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/il-he/home.html",
+            "text": "\u05d9\u05e9\u05e8\u05d0\u05dc"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/emea_middle_east-ar/home.html",
+            "text": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/sa-ar/home.html",
+            "text": "\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0);",
+            "text": "Americas"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/lamerica_nsc_cnt_amer-es/home.html",
+            "text": "Am\u00e9rica Central"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ar-es/home.html",
+            "text": "Argentina"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/bo-es/home.html",
+            "text": "Bolivia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/br-pt/home.html",
+            "text": "Brasil"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ca-en/home.html",
+            "text": "Canada"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ca-fr/home.html",
+            "text": "Canada - Fran\u00e7ais"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/lamerica_nsc_carib-en/home.html",
+            "text": "Caribbean"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/cl-es/home.html",
+            "text": "Chile"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/co-es/home.html",
+            "text": "Colombia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ec-es/home.html",
+            "text": "Ecuador"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/mx-es/home.html",
+            "text": "M\u00e9xico"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/py-es/home.html",
+            "text": "Paraguay"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/pe-es/home.html",
+            "text": "Per\u00fa"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/pr-es/home.html",
+            "text": "Puerto Rico"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/us-en/home.html",
+            "text": "United States"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/uy-es/home.html",
+            "text": "Uruguay"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ve-es/home.html",
+            "text": "Venezuela"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0);",
+            "text": "Asia and Oceania"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/asia_pac-en/default.html",
+            "text": "Asia Pacific"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/au-en/home.html",
+            "text": "Australia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/bd-en/home.html",
+            "text": "Bangladesh"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/hk-en/home.html",
+            "text": "Hong Kong SAR"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html",
+            "text": "India"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/id-id/home.html",
+            "text": "Indonesia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/my-en/home.html",
+            "text": "Malaysia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/nz-en/home.html",
+            "text": "New Zealand"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/asia_pac-en/default.html",
+            "text": "Pakistan"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ph-en/home.html",
+            "text": "Philippines"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/sg-en/home.html",
+            "text": "Singapore"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/lk-en/home.html",
+            "text": "Sri Lanka"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/vn-vi/home.html",
+            "text": "Vi\u1ec7t Nam"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/th-th/home.html",
+            "text": "\u0e44\u0e17\u0e22"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/cn-zh/home.html",
+            "text": "\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/tw-zh/home.html",
+            "text": "\u81fa\u7063 \u5730\u5340"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/jp-ja/home.html",
+            "text": "\u65e5\u672c"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/hk-zh/home.html",
+            "text": "\u9999\u6e2f\u7279\u5225\u884c\u653f\u5340"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/kr-ko/home.html",
+            "text": "\ud55c\uad6d"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html",
+            "text": "Country/Region :\nClose Country/Region Selector\n\u00a0\n\nSelectedIndia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/emea_africa-en/home.html",
+            "text": "Africa"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/emea_africa-fr/home.html",
+            "text": "Afrique"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/lamerica_nsc_cnt_amer-es/home.html",
+            "text": "Am\u00e9rica Central"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ar-es/home.html",
+            "text": "Argentina"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/asia_pac-en/default.html",
+            "text": "Asia Pacific"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/au-en/home.html",
+            "text": "Australia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/bd-en/home.html",
+            "text": "Bangladesh"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/be-nl/home.html",
+            "text": "Belgi\u00eb"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/be-fr/home.html",
+            "text": "Belgique"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/bo-es/home.html",
+            "text": "Bolivia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/br-pt/home.html",
+            "text": "Brasil"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ca-en/home.html",
+            "text": "Canada"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ca-fr/home.html",
+            "text": "Canada - Fran\u00e7ais"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/lamerica_nsc_carib-en/home.html",
+            "text": "Caribbean"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/cz-cs/home.html",
+            "text": "\u010cesk\u00e1 republika"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/cl-es/home.html",
+            "text": "Chile"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/co-es/home.html",
+            "text": "Colombia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/dk-da/home.html",
+            "text": "Danmark"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/de-de/home.html",
+            "text": "Deutschland"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ec-es/home.html",
+            "text": "Ecuador"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ee-et/home.html",
+            "text": "Eesti"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/es-es/home.html",
+            "text": "Espa\u00f1a"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/fr-fr/home.html",
+            "text": "France"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/hk-en/home.html",
+            "text": "Hong Kong SAR"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/hr-hr/home.html",
+            "text": "Hrvatska"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/home.html",
+            "text": "India"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/id-id/home.html",
+            "text": "Indonesia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ie-en/home.html",
+            "text": "Ireland"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/it-it/home.html",
+            "text": "Italia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/lv-lv/home.html",
+            "text": "Latvija"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/lt-lt/home.html",
+            "text": "Lietuva"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/hu-hu/home.html",
+            "text": "Magyarorsz\u00e1g"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/my-en/home.html",
+            "text": "Malaysia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/mx-es/home.html",
+            "text": "M\u00e9xico"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/emea_middle_east-en/home.html",
+            "text": "Middle East"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/nl-nl/home.html",
+            "text": "Nederland"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/nz-en/home.html",
+            "text": "New Zealand"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ng-en/home.html",
+            "text": "Nigeria"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/no-no/home.html",
+            "text": "Norge"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/at-de/home.html",
+            "text": "\u00d6sterreich"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/asia_pac-en/default.html",
+            "text": "Pakistan"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/py-es/home.html",
+            "text": "Paraguay"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/pe-es/home.html",
+            "text": "Per\u00fa"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ph-en/home.html",
+            "text": "Philippines"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/pl-pl/home.html",
+            "text": "Polska"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/pt-pt/home.html",
+            "text": "Portugal"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/pr-es/home.html",
+            "text": "Puerto Rico"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ro-ro/home.html",
+            "text": "Rom\u00e2nia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/sa-en/home.html",
+            "text": "Saudi Arabia"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/sg-en/home.html",
+            "text": "Singapore"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/si-sl/home.html",
+            "text": "Slovenija"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/sk-sk/home.html",
+            "text": "Slovensko"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/za-en/home.html",
+            "text": "South Africa"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/lk-en/home.html",
+            "text": "Sri Lanka"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ch-fr/home.html",
+            "text": "Suisse"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/fi-fi/home.html",
+            "text": "Suomi"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/se-sv/home.html",
+            "text": "Sverige"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ch-de/home.html",
+            "text": "Switzerland"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/tr-tr/home.html",
+            "text": "T\u00fcrkiye"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/gb-en/home.html",
+            "text": "United Kingdom"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/us-en/home.html",
+            "text": "United States"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/uy-es/home.html",
+            "text": "Uruguay"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ve-es/home.html",
+            "text": "Venezuela"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/vn-vi/home.html",
+            "text": "Vi\u1ec7t Nam"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/gr-el/home.html",
+            "text": "\u0395\u03bb\u03bb\u03ac\u03b4\u03b1"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/bg-bg/home.html",
+            "text": "\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/kz-ru/home.html",
+            "text": "\u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/rs-sr/home.html",
+            "text": "\u0421\u0440\u0431\u0438\u0458\u0430"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/ua-uk/home.html",
+            "text": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/il-he/home.html",
+            "text": "\u05d9\u05e9\u05e8\u05d0\u05dc"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/emea_middle_east-ar/home.html",
+            "text": "\u0627\u0644\u0634\u0631\u0642 \u0627\u0644\u0623\u0648\u0633\u0637"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/sa-ar/home.html",
+            "text": "\u0627\u0644\u0645\u0645\u0644\u0643\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0627\u0644\u0633\u0639\u0648\u062f\u064a\u0629"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/th-th/home.html",
+            "text": "\u0e44\u0e17\u0e22"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/cn-zh/home.html",
+            "text": "\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/tw-zh/home.html",
+            "text": "\u81fa\u7063 \u5730\u5340"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/jp-ja/home.html",
+            "text": "\u65e5\u672c"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/hk-zh/home.html",
+            "text": "\u9999\u6e2f\u7279\u5225\u884c\u653f\u5340"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/kr-ko/home.html",
+            "text": "\ud55c\uad6d"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0);",
+            "text": "Close Country/Region Selector Dialog"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0);",
+            "text": "About Us"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/hp-information.html",
+            "text": "About Us"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/hp-information.html",
+            "text": "About Us"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/contact-hp/contact.html",
+            "text": "Contact HP"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://jobs.hp.com",
+            "text": "Careers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://investor.hp.com/home/default.aspx",
+            "text": "Investor relations"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/sustainable-impact.html",
+            "text": "Sustainable impact"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/us-en/newsroom.html",
+            "text": "Newsroom"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/shop/tech-takes",
+            "text": "Tech Takes"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0);",
+            "text": "Ways to buy"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://store.hp.com/in-en/default/",
+            "text": "Shop online"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/hp-world-store-benefits.html",
+            "text": "HP World: Brand exclusive stores"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/contact-hp/shopping.html",
+            "text": "Call an HP rep"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://locator.hp.com/in/en/?ml___lang=en-GB%20(1)&ml___region=IN&ml___cont=APJ",
+            "text": "Find a reseller"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://h41201.www4.hp.com/WMCF.Web/in/en/landing/",
+            "text": "HP Promotions"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0);",
+            "text": "Support"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/",
+            "text": "Support"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/",
+            "text": "Support"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/drivers",
+            "text": "Download drivers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/",
+            "text": "Support & troubleshooting"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://h30434.www3.hp.com/",
+            "text": "Community"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://support.hp.com/in-en/service-center",
+            "text": "Authorized service providers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://gncpgslbpro1.houston.hp.com/Cso_Status/CsoStatus.aspx?lc=en&cc=in",
+            "text": "Check repair status"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://cs-apj.ext.hp.com/digital-support/region_page/digital_in.html",
+            "text": "Featured links"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0);",
+            "text": "HP Partners"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://partner.hp.com/hp-partner-application-support-documents",
+            "text": "HP Amplify Partner Program"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://partner.hp.com/login",
+            "text": "HP Partner Portal"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://developers.hp.com/",
+            "text": "Developers"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:void(0);",
+            "text": "Stay connected"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "http://www.facebook.com/HPindia",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.instagram.com/hp_india",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "http://www.twitter.com/hpindia",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://youtube.com/@hpindiavideos?si=QkEJ95v1TXbS6At6",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/hp-information/recalls.html",
+            "text": "Recalls"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/us-en/hp-information/sustainable-impact/planet-product-recycling.html#filters_product_recycling=region-asia|country-india",
+            "text": "Product recycling"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/us-en/hp-information/accessibility-aging.html",
+            "text": "Accessibility"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c08374460",
+            "text": "India CSR Policy"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/hp-information/annual-returns.html",
+            "text": "India Entity Annual Return"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "http://www.hp.com/in-en/privacy/privacy-central.html",
+            "text": "Privacy"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "https://www.hp.com/in-en/terms-of-use.html",
+            "text": "Terms of use"
+        },
+        {
+            "from": "https://www.hp.com/in-en/home.html",
+            "to": "javascript:;",
+            "text": "Use of cookies"
+        }
+    ]
+}
