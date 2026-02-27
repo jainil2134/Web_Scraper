@@ -18,6 +18,7 @@ import importlib.util
 import uuid
 import subprocess
 import sys
+from fastapi.responses import JSONResponse, FileResponse
 
 # --- YOUR EXISTING LOGIC START ---
 # (Keep your SecuritySpider class and helper functions here)
@@ -121,9 +122,66 @@ async def start_fullscan(request: ScanRequest):
 async def get_job(job_id: str):
     job = jobs.get(job_id)
     if not job:
-        return {'error': 'job not found'}, 404
-    # Return full job record (status + data when ready)
+        return JSONResponse({'error': 'job not found'}, status_code=404)
     return job
+
+
+@app.get('/api/history')
+async def list_history():
+    """Return a simple list of scan files with basic metadata."""
+    folder = os.path.join(os.path.dirname(__file__), 'scans')
+    if not os.path.exists(folder):
+        return []
+
+    items = []
+    for fn in os.listdir(folder):
+        if not fn.lower().endswith('.json'):
+            continue
+        safe = fn
+        path = os.path.join(folder, fn)
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            ip = data.get('target_ip', 'N/A')
+            date = data.get('scan_start_time', '')
+        except Exception:
+            ip = 'N/A'
+            date = ''
+        items.append({'filename': safe, 'ip': ip, 'date': date})
+
+    # sort by date desc when possible
+    items.sort(key=lambda x: x.get('date') or '', reverse=True)
+    return items
+
+
+@app.get('/api/scan/{filename}')
+async def get_scan(filename: str):
+    # sanitize filename
+    if '..' in filename or '/' in filename or '\\' in filename:
+        return JSONResponse({'error': 'invalid filename'}, status_code=400)
+    folder = os.path.join(os.path.dirname(__file__), 'scans')
+    path = os.path.join(folder, filename)
+    if not os.path.exists(path):
+        return JSONResponse({'error': 'not found'}, status_code=404)
+    try:
+        return FileResponse(path, media_type='application/json', filename=filename)
+    except Exception as e:
+        return JSONResponse({'error': str(e)}, status_code=500)
+
+
+@app.delete('/api/scan/{filename}')
+async def delete_scan(filename: str):
+    if '..' in filename or '/' in filename or '\\' in filename:
+        return JSONResponse({'error': 'invalid filename'}, status_code=400)
+    folder = os.path.join(os.path.dirname(__file__), 'scans')
+    path = os.path.join(folder, filename)
+    if not os.path.exists(path):
+        return JSONResponse({'error': 'not found'}, status_code=404)
+    try:
+        os.remove(path)
+        return {'status': 'deleted'}
+    except Exception as e:
+        return JSONResponse({'error': str(e)}, status_code=500)
 
 @app.post("/api/scrape")
 async def scrape_endpoint(request: ScanRequest):

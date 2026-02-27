@@ -55,24 +55,26 @@
         // Fetch history on load
         document.addEventListener('DOMContentLoaded', async () => {
             try {
-                const response = await fetch('http://127.0.0.1:8000/api/history');
+                const response = await fetch('/api/history');
                 const scans = await response.json();
                 const container = document.getElementById('historyList');
 
-                if (scans.length === 0) {
+                if (!Array.isArray(scans) || scans.length === 0) {
                     container.innerHTML = '<tr><td colspan="4" class="p-10 text-center text-slate-500">No previous scans found.</td></tr>';
                     return;
                 }
 
                 scans.forEach(scan => {
+                    const host = scan.filename.split('_')[0];
                     const row = `
                         <tr class="hover:bg-slate-800/30 transition">
-                            <td class="p-4 font-mono text-blue-400">${scan.filename.split('_')[0]}</td>
+                            <td class="p-4 font-mono text-blue-400">${host}</td>
                             <td class="p-4 text-slate-300">${scan.ip}</td>
                             <td class="p-4 text-slate-500">${scan.date}</td>
                             <td class="p-4 text-right">
                                 <button onclick="viewReport('${scan.filename}')" class="text-blue-500 hover:text-blue-400 font-bold px-3">View</button>
-                                <button class="text-red-500 hover:text-red-400 px-3">Delete</button>
+                                <button onclick="downloadReport('${scan.filename}')" class="text-emerald-500 hover:text-emerald-400 px-3">Download</button>
+                                <button onclick="deleteReport('${scan.filename}')" class="text-red-500 hover:text-red-400 px-3">Delete</button>
                             </td>
                         </tr>
                     `;
@@ -83,9 +85,41 @@
             }
         });
 
-        function viewReport(filename) {
-            alert("Redirecting to detailed view for: " + filename);
-            // You can implement a detailed view page or re-inject the JSON into index.html
+        async function viewReport(filename) {
+            try {
+                const r = await fetch(`/api/scan/${filename}`);
+                if (!r.ok) return alert('Failed to load report');
+                const text = await r.text();
+                const w = window.open('', '_blank');
+                const pre = w.document.createElement('pre');
+                pre.textContent = JSON.stringify(JSON.parse(text), null, 4);
+                w.document.body.style.background = '#0f172a';
+                w.document.body.style.color = '#e2e8f0';
+                w.document.body.appendChild(pre);
+            } catch (e) {
+                console.error(e);
+                alert('Error opening report');
+            }
+        }
+
+        async function downloadReport(filename) {
+            const a = document.createElement('a');
+            a.href = `/api/scan/${filename}`;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        }
+
+        async function deleteReport(filename) {
+            if (!confirm('Delete this report?')) return;
+            try {
+                const r = await fetch(`/api/scan/${filename}`, { method: 'DELETE' });
+                if (!r.ok) throw new Error('delete failed');
+                location.reload();
+            } catch (e) {
+                alert('Failed to delete: ' + e.message);
+            }
         }
     </script>
 </body>
