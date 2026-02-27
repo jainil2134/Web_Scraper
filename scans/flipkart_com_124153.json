@@ -1,19 +1,20 @@
 {
-    "target_ip": "34.49.140.161",
+    "scan_start_time": "2026-02-27 12:41:57",
+    "target_ip": "163.53.76.86",
     "target_port": 443,
     "geo_intel": {
         "status": "success",
-        "country": "United States",
-        "city": "Kansas City",
-        "isp": "Google LLC",
-        "org": "Google Cloud",
-        "as": "AS396982 Google LLC"
+        "country": "India",
+        "city": "Bengaluru",
+        "isp": "Flipkart Internet Pvt Ltd",
+        "org": "Flipkart Internet Pvt Ltd",
+        "as": "AS9752 Flipkart Internet Pvt Ltd"
     },
     "open_ports": [
         {
             "port": 80,
             "service": "http",
-            "banner": "HTTP/1.0 301 Moved Permanently\r"
+            "banner": "HTTP/1.1 301 Moved Permanently\r"
         },
         {
             "port": 443,
@@ -35,7 +36,6 @@
     "domain_dates": {
         "created": "N/A"
     },
-    "scan_start_time": "2026-02-26 12:42:40",
     "findings": {
         "http_headers": {},
         "server_software": "Unknown",

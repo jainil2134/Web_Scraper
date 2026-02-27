@@ -29,23 +29,44 @@ async function startAudit() {
     const urlValue = document.getElementById('urlInput').value.trim();
     if (!urlValue) return alert("Please enter a URL");
 
-    logToTerminal(`Initializing audit for: ${urlValue}`, 'warning');
+    logToTerminal(`Starting full audit for: ${urlValue}`, 'warning');
 
     try {
-        // 1. Send the request to the Python Backend
-        const response = await fetch('/api/audit', {
+        const resp = await fetch('/api/fullscan', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ url: urlValue })
         });
+        if (!resp.ok) throw new Error('Failed to start full scan');
+        const body = await resp.json();
+        const jobId = body.job_id;
+        logToTerminal(`Scan started (job: ${jobId}). Polling for results...`, 'info');
 
-        if (!response.ok) throw new Error('Backend failed to respond');
+        // Polling loop
+        const poll = async () => {
+            try {
+                const s = await fetch(`/api/job/${jobId}`);
+                const job = await s.json();
+                if (job.status === 'running') {
+                    logToTerminal('Scan still running...', 'info');
+                    setTimeout(poll, 3000);
+                    return;
+                }
+                if (job.status === 'failed') {
+                    logToTerminal(`Scan failed: ${job.error}`, 'error');
+                    return;
+                }
 
-        // 2. Capture and Display results
-        lastScanData = await response.json(); 
-        updateUI(lastScanData);
-        
-        logToTerminal("Network reconnaissance complete.", 'success');
+                // success
+                lastScanData = job.result_data;
+                updateUI(lastScanData);
+                logToTerminal('Full audit complete.', 'success');
+            } catch (e) {
+                logToTerminal(`Polling error: ${e.message}`, 'error');
+            }
+        };
+
+        setTimeout(poll, 2000);
     } catch (error) {
         logToTerminal(`Link Error: ${error.message}`, 'error');
     }
