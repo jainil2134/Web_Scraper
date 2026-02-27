@@ -107,14 +107,14 @@ def _run_full_scan(job_id: str, user_url: str):
         jobs[job_id].update(status='failed', error=str(e))
 
 
-# @app.post('/api/fullscan')
-# async def start_fullscan(request: ScanRequest):
-#     """Start a full Scrapy-based scan in a background thread. Returns a job_id to poll."""
-#     job_id = uuid.uuid4().hex
-#     jobs[job_id] = {'status': 'running'}
-#     thread = threading.Thread(target=_run_full_scan, args=(job_id, request.url), daemon=True)
-#     thread.start()
-#     return {'job_id': job_id}
+@app.post('/api/fullscan')
+async def start_fullscan(request: ScanRequest):
+    """Start a full Scrapy-based scan in a background thread. Returns a job_id to poll."""
+    job_id = uuid.uuid4().hex
+    jobs[job_id] = {'status': 'running'}
+    thread = threading.Thread(target=_run_full_scan, args=(job_id, request.url), daemon=True)
+    thread.start()
+    return {'job_id': job_id}
 
 
 @app.get('/api/job/{job_id}')
