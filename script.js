@@ -119,3 +119,46 @@ function downloadReport() {
     document.body.removeChild(a);
     logToTerminal(`Snapshot saved: ${filename}`, 'success');
 }
+
+
+/**
+ * Lightweight scrape action (title, meta, h1s, links)
+ */
+async function startScrape() {
+    const urlValue = document.getElementById('urlInput').value.trim();
+    if (!urlValue) return alert("Please enter a URL");
+
+    logToTerminal(`Starting lightweight scrape for: ${urlValue}`, 'warning');
+
+    try {
+        const response = await fetch('/api/scrape', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ url: urlValue })
+        });
+
+        if (!response.ok) throw new Error('Scrape endpoint failed');
+
+        const data = await response.json();
+        lastScanData = data;
+
+        if (data.error) {
+            logToTerminal(`Scrape Error: ${data.error}`, 'error');
+            return;
+        }
+
+        logToTerminal(`Title: ${data.title || 'N/A'}`, 'success');
+        if (data.description) logToTerminal(`Description: ${data.description}`);
+        if (Array.isArray(data.h1)) data.h1.forEach(h => logToTerminal(`H1: ${h}`));
+        if (Array.isArray(data.links)) data.links.slice(0, 10).forEach(l => logToTerminal(`Link: ${l}`));
+
+        const dlBtn = document.getElementById('downloadBtn');
+        dlBtn.disabled = false;
+        dlBtn.classList.remove('opacity-50', 'cursor-not-allowed', 'text-slate-500');
+        dlBtn.classList.add('bg-emerald-600', 'text-white', 'hover:bg-emerald-700');
+
+        logToTerminal('Scrape complete.', 'success');
+    } catch (error) {
+        logToTerminal(`Scrape failed: ${error.message}`, 'error');
+    }
+}

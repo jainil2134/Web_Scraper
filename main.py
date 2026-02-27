@@ -13,6 +13,7 @@ from datetime import datetime
 from urllib.parse import urlparse
 from scrapy.crawler import CrawlerRunner
 from twisted.internet import reactor
+from scraper import scrape_url
 
 # --- YOUR EXISTING LOGIC START ---
 # (Keep your SecuritySpider class and helper functions here)
@@ -77,6 +78,19 @@ async def start_audit(request: ScanRequest):
     # Note: Scrapy normally blocks the thread. For a production-ready GUI, 
     # you would trigger the spider as a background task.
     return metadata
+
+
+@app.post("/api/scrape")
+async def scrape_endpoint(request: ScanRequest):
+    """Lightweight HTML scrape using requests + BeautifulSoup.
+    Returns title, description, h1s, and links (first 50).
+    """
+    user_url = request.url
+    if not user_url.startswith('http'):
+        user_url = 'http://' + user_url
+
+    result = scrape_url(user_url)
+    return result
 
 # Serve the frontend static files (index.html, script.js, etc.)
 app.mount("/", StaticFiles(directory=".", html=True), name="static")
