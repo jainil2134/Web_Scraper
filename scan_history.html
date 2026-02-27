@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan History | CTI Auditor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 min-h-screen">
+
+    <aside class="fixed left-0 top-0 h-full w-64 bg-slate-900 border-r border-slate-800 p-6 hidden lg:block">
+        <div class="flex items-center gap-3 mb-10">
+            <i data-lucide="shield-check" class="text-blue-500 w-8 h-8"></i>
+            <h1 class="text-xl font-bold tracking-tight">CTI AUDITOR</h1>
+        </div>
+        <nav class="space-y-4">
+            <a href="index.html" class="flex items-center gap-3 p-3 hover:bg-slate-800 rounded-lg transition text-slate-400">
+                <i data-lucide="search"></i> New Scan
+            </a>
+            <a href="#" class="flex items-center gap-3 p-3 bg-blue-600/10 text-blue-400 rounded-lg border border-blue-600/20">
+                <i data-lucide="history"></i> Scan History
+            </a>
+        </nav>
+    </aside>
+
+    <main class="lg:ml-64 p-8">
+        <header class="mb-10">
+            <h2 class="text-3xl font-bold text-white">Audit History</h2>
+            <p class="text-slate-500">View and manage your previous reconnaissance reports.</p>
+        </header>
+
+        <div class="glass-card border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
+            <table class="w-full text-left border-collapse">
+                <thead class="bg-slate-900/50 border-b border-slate-800">
+                    <tr>
+                        <th class="p-4 text-slate-400 font-medium">Target Host</th>
+                        <th class="p-4 text-slate-400 font-medium">IP Address</th>
+                        <th class="p-4 text-slate-400 font-medium">Scan Date</th>
+                        <th class="p-4 text-slate-400 font-medium text-right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="historyList" class="divide-y divide-slate-800">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+
+        // Fetch history on load
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('http://127.0.0.1:8000/api/history');
+                const scans = await response.json();
+                const container = document.getElementById('historyList');
+
+                if (scans.length === 0) {
+                    container.innerHTML = '<tr><td colspan="4" class="p-10 text-center text-slate-500">No previous scans found.</td></tr>';
+                    return;
+                }
+
+                scans.forEach(scan => {
+                    const row = `
+                        <tr class="hover:bg-slate-800/30 transition">
+                            <td class="p-4 font-mono text-blue-400">${scan.filename.split('_')[0]}</td>
+                            <td class="p-4 text-slate-300">${scan.ip}</td>
+                            <td class="p-4 text-slate-500">${scan.date}</td>
+                            <td class="p-4 text-right">
+                                <button onclick="viewReport('${scan.filename}')" class="text-blue-500 hover:text-blue-400 font-bold px-3">View</button>
+                                <button class="text-red-500 hover:text-red-400 px-3">Delete</button>
+                            </td>
+                        </tr>
+                    `;
+                    container.innerHTML += row;
+                });
+            } catch (err) {
+                console.error("Failed to load history:", err);
+            }
+        });
+
+        function viewReport(filename) {
+            alert("Redirecting to detailed view for: " + filename);
+            // You can implement a detailed view page or re-inject the JSON into index.html
+        }
+    </script>
+</body>
+</html>

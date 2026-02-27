@@ -1,0 +1,276 @@
+{
+    "target_ip": "142.250.77.78",
+    "target_port": 443,
+    "geo_intel": {
+        "status": "success",
+        "country": "India",
+        "city": "Mumbai",
+        "isp": "Google LLC",
+        "org": "Google LLC",
+        "as": "AS15169 Google LLC"
+    },
+    "open_ports": [
+        {
+            "port": 443,
+            "service": "https",
+            "banner": "No Banner Responded"
+        },
+        {
+            "port": 80,
+            "service": "http",
+            "banner": "HTTP/1.0 200 OK\r"
+        },
+        {
+            "port": 21,
+            "service": "ftp",
+            "banner": "Banner Grabbing Failed"
+        },
+        {
+            "port": 1723,
+            "service": "pptp",
+            "banner": "Banner Grabbing Failed"
+        }
+    ],
+    "vpn_status": "VPN Found! Banner: Banner Grabbing Failed",
+    "domain_dates": {
+        "created": "N/A"
+    },
+    "scan_start_time": "2026-02-26 12:50:20",
+    "findings": {
+        "http_headers": {
+            "Date": "Thu, 26 Feb 2026 07:20:22 GMT",
+            "Expires": "-1",
+            "Cache-Control": "private, max-age=0",
+            "Content-Type": "text/html; charset=UTF-8",
+            "Content-Security-Policy-Report-Only": "object-src 'none';base-uri 'self';script-src 'nonce-43VE9Fx-LEx_og-1zlaAcQ' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp",
+            "Reporting-Endpoints": "default=\"//www.google.com/httpservice/retry/jserror?ei=NfSfabDTPI7s1e8P0ICxgA4&cad=crash&error=Page%20Crash&jsel=1&bver=2385&dpf=8r_cyy01OsFLwSCSqmluDYQiaXgP9g2o2wLZzZB9lXc\"",
+            "Accept-Ch": "Sec-CH-Prefers-Color-Scheme",
+            "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+            "Server": "gws",
+            "X-Xss-Protection": "0",
+            "X-Frame-Options": "SAMEORIGIN",
+            "Set-Cookie": "__Secure-STRP=AD6Dogurrh8tXwonHsNja09cZfqrfGB8GszjDaGr85jm5ywqjkL-6yUinitRcPm9KvvE3AZdjNd-KOdVPTKvu1s-PG-SYBrEMw; expires=Thu, 26-Feb-2026 07:25:22 GMT; path=/; domain=.google.com; Secure; SameSite=strict",
+            "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+        },
+        "server_software": "gws",
+        "operating_system": "Hidden",
+        "comments": [],
+        "proxy_detected": "No Proxy Found",
+        "security_header_audit": {
+            "Strict-Transport-Security": "MISSING",
+            "Content-Security-Policy": "MISSING"
+        }
+    },
+    "sub_urls": [
+        "https://www.google.com/"
+    ],
+    "external_connections": [
+        "accounts.google.com",
+        "books.google.co.in",
+        "calendar.google.com",
+        "docs.google.com",
+        "drive.google.com",
+        "mail.google.com",
+        "maps.google.co.in",
+        "news.google.com",
+        "photos.google.com",
+        "play.google.com",
+        "translate.google.co.in",
+        "www.blogger.com",
+        "www.google.co.in",
+        "www.google.com",
+        "www.youtube.com"
+    ],
+    "navigation_map": [
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.co.in/webhp?tab=ww",
+            "text": "Search"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/imghp?hl=en&tab=wi",
+            "text": "Images"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://maps.google.co.in/maps?hl=en&tab=wl",
+            "text": "Maps"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://play.google.com/?hl=en&tab=w8",
+            "text": "Play"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.youtube.com/?tab=w1",
+            "text": "YouTube"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://news.google.com/?tab=wn",
+            "text": "News"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://mail.google.com/mail/?tab=wm",
+            "text": "Gmail"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://drive.google.com/?tab=wo",
+            "text": "Drive"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.co.in/intl/en/about/products?tab=wh",
+            "text": "More"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://calendar.google.com/calendar?tab=wc",
+            "text": "Calendar"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://translate.google.co.in/?hl=en&tab=wT",
+            "text": "Translate"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://books.google.co.in/?hl=en&tab=wp",
+            "text": "Books"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.co.in/shopping?hl=en&source=og&tab=wf",
+            "text": "Shopping"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.blogger.com/?tab=wj",
+            "text": "Blogger"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/finance?tab=we",
+            "text": "Finance"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://photos.google.com/?tab=wq&pageId=none",
+            "text": "Photos"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://docs.google.com/document/?usp=docs_alc",
+            "text": "Docs"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.co.in/intl/en/about/products?tab=wh",
+            "text": "Even more \u00bb"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ",
+            "text": "Sign in"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "http://www.google.co.in/preferences?hl=en",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/preferences?hl=en",
+            "text": "Search settings"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "http://www.google.co.in/history/optout?hl=en",
+            "text": "Web History"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/advanced_search?hl=en-IN&authuser=0",
+            "text": "Advanced search"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/setprefs?sig=0_PkvvPAJ1ts7lSwDHwr9ALwvb-NE%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwjwwfOgz_aSAxUOdvUHHVBADOAQ2ZgBCAY",
+            "text": "\u0939\u093f\u0928\u094d\u0926\u0940"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/setprefs?sig=0_PkvvPAJ1ts7lSwDHwr9ALwvb-NE%3D&hl=bn&source=homepage&sa=X&ved=0ahUKEwjwwfOgz_aSAxUOdvUHHVBADOAQ2ZgBCAc",
+            "text": "\u09ac\u09be\u0982\u09b2\u09be"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/setprefs?sig=0_PkvvPAJ1ts7lSwDHwr9ALwvb-NE%3D&hl=te&source=homepage&sa=X&ved=0ahUKEwjwwfOgz_aSAxUOdvUHHVBADOAQ2ZgBCAg",
+            "text": "\u0c24\u0c46\u0c32\u0c41\u0c17\u0c41"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/setprefs?sig=0_PkvvPAJ1ts7lSwDHwr9ALwvb-NE%3D&hl=mr&source=homepage&sa=X&ved=0ahUKEwjwwfOgz_aSAxUOdvUHHVBADOAQ2ZgBCAk",
+            "text": "\u092e\u0930\u093e\u0920\u0940"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/setprefs?sig=0_PkvvPAJ1ts7lSwDHwr9ALwvb-NE%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwjwwfOgz_aSAxUOdvUHHVBADOAQ2ZgBCAo",
+            "text": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/setprefs?sig=0_PkvvPAJ1ts7lSwDHwr9ALwvb-NE%3D&hl=gu&source=homepage&sa=X&ved=0ahUKEwjwwfOgz_aSAxUOdvUHHVBADOAQ2ZgBCAs",
+            "text": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/setprefs?sig=0_PkvvPAJ1ts7lSwDHwr9ALwvb-NE%3D&hl=kn&source=homepage&sa=X&ved=0ahUKEwjwwfOgz_aSAxUOdvUHHVBADOAQ2ZgBCAw",
+            "text": "\u0c95\u0ca8\u0ccd\u0ca8\u0ca1"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/setprefs?sig=0_PkvvPAJ1ts7lSwDHwr9ALwvb-NE%3D&hl=ml&source=homepage&sa=X&ved=0ahUKEwjwwfOgz_aSAxUOdvUHHVBADOAQ2ZgBCA0",
+            "text": "\u0d2e\u0d32\u0d2f\u0d3e\u0d33\u0d02"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/setprefs?sig=0_PkvvPAJ1ts7lSwDHwr9ALwvb-NE%3D&hl=pa&source=homepage&sa=X&ved=0ahUKEwjwwfOgz_aSAxUOdvUHHVBADOAQ2ZgBCA4",
+            "text": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/intl/en/ads/",
+            "text": "Advertising"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "http://www.google.co.in/services/",
+            "text": "Business Solutions"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/intl/en/about.html",
+            "text": "About Google"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/setprefdomain?prefdom=IN&prev=https://www.google.co.in/&sig=K_RCjljnyvQKbAQLBLRYvIrSAWGsM%3D",
+            "text": "Google.co.in"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/intl/en/policies/privacy/",
+            "text": "Privacy"
+        },
+        {
+            "from": "https://www.google.com/",
+            "to": "https://www.google.com/intl/en/policies/terms/",
+            "text": "Terms"
+        }
+    ]
+}

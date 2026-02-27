@@ -1,0 +1,111 @@
+{
+    "target_ip": "18.172.64.129",
+    "target_port": 443,
+    "geo_intel": {
+        "status": "success",
+        "country": "India",
+        "city": "Mumbai",
+        "isp": "Amazon.com, Inc.",
+        "org": "AWS CloudFront (GLOBAL)",
+        "as": "AS16509 Amazon.com, Inc."
+    },
+    "open_ports": [
+        {
+            "port": 80,
+            "service": "http",
+            "banner": "HTTP/1.1 400 Bad Request\r"
+        },
+        {
+            "port": 21,
+            "service": "ftp",
+            "banner": "Banner Grabbing Failed"
+        },
+        {
+            "port": 1723,
+            "service": "pptp",
+            "banner": "Banner Grabbing Failed"
+        },
+        {
+            "port": 443,
+            "service": "https",
+            "banner": "Banner Grabbing Failed"
+        }
+    ],
+    "vpn_status": "VPN Found! Banner: Banner Grabbing Failed",
+    "domain_dates": {
+        "created": "N/A"
+    },
+    "scan_start_time": "2026-02-26 12:45:09",
+    "findings": {
+        "http_headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "Server": "CloudFront",
+            "Date": "Thu, 26 Feb 2026 07:15:11 GMT",
+            "Vary": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Url, Accept-Encoding",
+            "X-Powered-By": "Next.js",
+            "Cache-Control": "public,max-age=300",
+            "Via": "1.1 c04bc92d6d282d028a5ae16314cc9b48.cloudfront.net (CloudFront)",
+            "Set-Cookie": "alps=akm; path=/; domain=.snapdeal.com; Expires=Wed, 04 Mar 2026 07:15:11 GMT",
+            "X-Cache": "Miss from cloudfront",
+            "X-Amz-Cf-Pop": "BOM78-P8",
+            "X-Amz-Cf-Id": "C02NI0pwoSIcJ2GDwro7wF29Tpq_XrD-Uz_wZBRGrEbo61qfeUNMHQ=="
+        },
+        "server_software": "CloudFront",
+        "operating_system": "Hidden",
+        "comments": [],
+        "proxy_detected": "Proxy Detected (Via)",
+        "security_header_audit": {
+            "Strict-Transport-Security": "MISSING",
+            "Content-Security-Policy": "MISSING"
+        }
+    },
+    "sub_urls": [
+        "https://www.snapdeal.com:443/"
+    ],
+    "external_connections": [
+        "instagram.com",
+        "t.me",
+        "twitter.com",
+        "wa.me",
+        "www.facebook.com",
+        "www.linkedin.com",
+        "www.youtube.com"
+    ],
+    "navigation_map": [
+        {
+            "from": "https://www.snapdeal.com:443/",
+            "to": "https://www.facebook.com/Snapdeal",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.snapdeal.com:443/",
+            "to": "https://twitter.com/snapdeal",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.snapdeal.com:443/",
+            "to": "https://instagram.com/snapdeal/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.snapdeal.com:443/",
+            "to": "https://www.linkedin.com/company/snapdeal/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.snapdeal.com:443/",
+            "to": "https://www.youtube.com/user/snapdeal",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.snapdeal.com:443/",
+            "to": "https://t.me/sdwapp",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://www.snapdeal.com:443/",
+            "to": "https://wa.me/918130222868?text=Hello%20Snapdeal,%20I%20need%20help",
+            "text": "[Internal Link]"
+        }
+    ]
+}

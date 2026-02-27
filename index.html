@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Recon Auditor | CTI Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+        .terminal-font { font-family: 'Fira Code', monospace; }
+        .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); }
+        #terminal::-webkit-scrollbar { width: 6px; }
+        #terminal::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 min-h-screen">
+
+    <aside class="fixed left-0 top-0 h-full w-64 bg-slate-900 border-r border-slate-800 p-6 hidden lg:block">
+        <div class="flex items-center gap-3 mb-10">
+            <i data-lucide="shield-check" class="text-blue-500 w-8 h-8"></i>
+            <h1 class="text-xl font-bold tracking-tight">CTI AUDITOR</h1>
+        </div>
+        <nav class="space-y-4">
+            <a href="#" class="flex items-center gap-3 p-3 bg-blue-600/10 text-blue-400 rounded-lg border border-blue-600/20">
+                <i data-lucide="search"></i> New Scan
+            </a>
+            <a href="scan_history.html" class="flex items-center gap-3 p-3 hover:bg-slate-800 rounded-lg transition text-slate-400">
+                <i data-lucide="history"></i> Scan History
+            </a>
+            <a href="#" class="flex items-center gap-3 p-3 hover:bg-slate-800 rounded-lg transition text-slate-400">
+                <i data-lucide="settings"></i> Settings
+            </a>
+        </nav>
+    </aside>
+
+    <main class="lg:ml-64 p-8">
+        <header class="flex flex-col md:flex-row gap-4 mb-8">
+            <div class="flex-1 relative">
+                <input type="text" id="urlInput" placeholder="Enter Target URL (https://example.com)..." 
+                    class="w-full bg-slate-900 border border-slate-700 rounded-xl py-4 px-6 focus:outline-none focus:border-blue-500 transition shadow-lg text-white">
+            </div>
+            <button onclick="startAudit()" id="startBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition flex items-center gap-2 shadow-lg shadow-blue-900/20">
+                <i data-lucide="play"></i> START AUDIT
+            </button>
+            <button onclick="downloadReport()" id="downloadBtn" disabled 
+                class="bg-slate-800 text-slate-500 font-bold py-4 px-8 rounded-xl transition flex items-center gap-2 opacity-50 cursor-not-allowed">
+                <i data-lucide="download"></i> JSON
+            </button>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div class="glass-card border border-slate-800 p-6 rounded-2xl">
+                <p class="text-slate-500 text-sm mb-1">Target IP</p>
+                <h3 id="ipDisplay" class="text-xl font-mono text-blue-400">---</h3>
+            </div>
+            <div class="glass-card border border-slate-800 p-6 rounded-2xl">
+                <p class="text-slate-500 text-sm mb-1">VPN Server</p>
+                <h3 id="vpnDisplay" class="text-xl text-emerald-400">---</h3>
+            </div>
+            <div class="glass-card border border-slate-800 p-6 rounded-2xl">
+                <p class="text-slate-500 text-sm mb-1">Security Status</p>
+                <h3 id="riskDisplay" class="text-xl text-slate-400">Waiting...</h3>
+            </div>
+            <div class="glass-card border border-slate-800 p-6 rounded-2xl">
+                <p class="text-slate-500 text-sm mb-1">ISP / Org</p>
+                <h3 id="ispDisplaySmall" class="text-sm truncate">---</h3>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 xl:grid-cols-3 gap-8">
+            <div class="xl:col-span-2">
+                <section class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+                    <div class="p-5 border-b border-slate-800 bg-slate-900/50 flex justify-between items-center">
+                        <h2 class="font-bold flex items-center gap-2"><i data-lucide="layout"></i> Recon Summary</h2>
+                        <span id="statusBadge" class="px-3 py-1 bg-slate-800 rounded-full text-xs">Standby</span>
+                    </div>
+                    <table class="w-full text-left border-collapse">
+                        <tbody class="divide-y divide-slate-800">
+                            <tr><td class="p-4 text-slate-500">ASN Info</td><td id="asnDetail" class="p-4">---</td></tr>
+                            <tr><td class="p-4 text-slate-500">ISP / Organization</td><td id="ispDetail" class="p-4">---</td></tr>
+                            <tr><td class="p-4 text-slate-500">HSTS Header</td><td id="hstsDetail" class="p-4">---</td></tr>
+                            <tr><td class="p-4 text-slate-500">CSP Header</td><td id="cspDetail" class="p-4">---</td></tr>
+                            <tr><td class="p-4 text-slate-500">Open Ports</td><td id="portDetail" class="p-4">---</td></tr>
+                            <tr><td class="p-4 text-slate-500">Crawl Start</td><td id="startDetail" class="p-4">---</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+
+            <div class="xl:col-span-1">
+                <section class="bg-black border border-slate-800 rounded-2xl h-[500px] flex flex-col">
+                    <div class="p-3 border-b border-slate-800 bg-slate-900 flex items-center gap-2">
+                        <div class="flex gap-1.5"><div class="w-3 h-3 rounded-full bg-red-500"></div><div class="w-3 h-3 rounded-full bg-yellow-500"></div><div class="w-3 h-3 rounded-full bg-green-500"></div></div>
+                        <span class="text-xs text-slate-500 font-mono ml-2">cti_engine.log</span>
+                    </div>
+                    <div id="terminal" class="p-6 overflow-y-auto flex-1 terminal-font text-sm leading-relaxed text-blue-400">
+                        <p class="text-slate-600">Initializing GUI Interface... Ready for URL input.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
