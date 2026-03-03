@@ -1,0 +1,711 @@
+{
+    "scan_start_time": "2026-03-03 12:46:46",
+    "target_ip": "162.159.136.54",
+    "target_port": 443,
+    "geo_intel": {
+        "status": "success",
+        "country": "Canada",
+        "city": "Toronto",
+        "isp": "Cloudflare, Inc.",
+        "org": "Cloudflare, Inc.",
+        "as": "AS13335 Cloudflare, Inc."
+    },
+    "open_ports": [
+        {
+            "port": 80,
+            "service": "http",
+            "banner": "HTTP/1.1 400 Bad Request\r"
+        },
+        {
+            "port": 443,
+            "service": "https",
+            "banner": "HTTP/1.1 400 Bad Request\r"
+        },
+        {
+            "port": 8080,
+            "service": "Unknown",
+            "banner": "HTTP/1.1 400 Bad Request\r"
+        }
+    ],
+    "vpn_status": "No VPN Server Found",
+    "domain_dates": {
+        "created": "N/A"
+    },
+    "findings": {
+        "http_headers": {
+            "Date": "Tue, 03 Mar 2026 07:16:45 GMT",
+            "Content-Type": "text/html; charset=utf-8",
+            "Cf-Ray": "9d66db88c993ffc8-BOM",
+            "Cf-Cache-Status": "DYNAMIC",
+            "Age": "11650",
+            "Last-Modified": "Tue, 03 Mar 2026 00:02:14 GMT",
+            "Vary": "Accept-Encoding",
+            "Cache-Provider": "CLOUDWAYS-CACHE-DE",
+            "X-Cache": "HIT",
+            "Set-Cookie": "__cf_bm=cckmS2hqcAuc3ZO0xzgqgJUv9JzQ0L8C5l.pHLXBSeM-1772522205-1.0.1.1-jRKkkzk5hViMxwV2VMlAzulRocEkaqCsf0dTpf79vGyauH_ZD9FVPyZhh4rV_dOZ.3sJe5Lksfk1QJ647d06tE9013MFJhFl_GcWwwBcaGA; path=/; expires=Tue, 03-Mar-26 07:46:45 GMT; domain=.be10x.com; HttpOnly; Secure; SameSite=None",
+            "Server": "cloudflare",
+            "Alt-Svc": "h3=\":443\"; ma=86400"
+        },
+        "server_software": "cloudflare",
+        "operating_system": "Hidden",
+        "comments": [],
+        "proxy_detected": "Proxy Detected (cf-ray)",
+        "security_header_audit": {
+            "Strict-Transport-Security": "MISSING",
+            "Content-Security-Policy": "MISSING"
+        }
+    },
+    "sub_urls": [
+        "https://be10x.com"
+    ],
+    "external_connections": [
+        "app.aigyan.in",
+        "be10x.com",
+        "docs.google.com",
+        "forms.gle",
+        "in.linkedin.com",
+        "learn.be10x.in",
+        "twitter.com",
+        "wa.me",
+        "www.facebook.com",
+        "www.instagram.com",
+        "youtube.com"
+    ],
+    "navigation_map": [
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com#content",
+            "text": "Skip to content"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com#",
+            "text": "Workshops"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/ai-tool-workshop/",
+            "text": "AI Tools Workshop"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/ai-tools-of-the-day/",
+            "text": "AI Tool of the Day"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/",
+            "text": "Blogs"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/ai-tools/",
+            "text": "AI Tools"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/chatgpt/",
+            "text": "ChatGPT"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/excel-with-ai/",
+            "text": "Excel With AI"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/marketing-with-ai/",
+            "text": "Marketing With AI"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/about-us/",
+            "text": "About Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/contact-us/",
+            "text": "Contact Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://app.aigyan.in/login",
+            "text": "My Account"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://app.aigyan.in/login",
+            "text": "My Account"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com#",
+            "text": "Workshops"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/ai-tool-workshop/",
+            "text": "AI Tools Workshop"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/ai-tools-of-the-day/",
+            "text": "AI Tool of the Day"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/",
+            "text": "Blogs"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/ai-tools/",
+            "text": "AI Tools"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/chatgpt/",
+            "text": "ChatGPT"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/excel-with-ai/",
+            "text": "Excel With AI"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/marketing-with-ai/",
+            "text": "Marketing With AI"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/about-us/",
+            "text": "About Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/contact-us/",
+            "text": "Contact Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com#",
+            "text": "My Account"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://learn.be10x.in/login/",
+            "text": "Old LMS"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://app.aigyan.in/login",
+            "text": "New LMS"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com#",
+            "text": "Workshops"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/ai-tool-workshop/",
+            "text": "AI Tools Workshop"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/ai-tools-of-the-day/",
+            "text": "AI Tool of the Day"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/",
+            "text": "Blogs"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/ai-tools/",
+            "text": "AI Tools"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/chatgpt/",
+            "text": "ChatGPT"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/excel-with-ai/",
+            "text": "Excel With AI"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/marketing-with-ai/",
+            "text": "Marketing With AI"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/about-us/",
+            "text": "About Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/contact-us/",
+            "text": "Contact Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://app.aigyan.in/login",
+            "text": "My Account"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://app.aigyan.in/login",
+            "text": "My Account"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com#",
+            "text": "Workshops"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/ai-tool-workshop/",
+            "text": "AI Tools Workshop"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/ai-tools-of-the-day/",
+            "text": "AI Tool of the Day"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/",
+            "text": "Blogs"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/ai-tools/",
+            "text": "AI Tools"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/chatgpt/",
+            "text": "ChatGPT"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/excel-with-ai/",
+            "text": "Excel With AI"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/marketing-with-ai/",
+            "text": "Marketing With AI"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/about-us/",
+            "text": "About Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/contact-us/",
+            "text": "Contact Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com#",
+            "text": "My Account"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://learn.be10x.in/login/",
+            "text": "Old LMS"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://app.aigyan.in/login",
+            "text": "New LMS"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/ai-hm/?utm_source=home",
+            "text": "Register now"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/powerbi-hm/",
+            "text": "Register now"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/office-ai-hm/?utm_source=home",
+            "text": "Register now"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/ai-tool-workshop/?utm_source=home",
+            "text": "Register now"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/office-hacks-workshop//?utm_source=home",
+            "text": "Register now"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/powerbi-workshop/",
+            "text": "Register now"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/how-we-decide-which-ai-tools-to-teach-and-why-we-intentionally-skip-many-popular-ones/",
+            "text": "How We Decide Which AI Tools to Teach (And Why We Intentionally Skip Many Popular Ones)"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/2026/02/19/",
+            "text": "February 19, 2026"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/ai-tools/",
+            "text": "AI Tools"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/education/",
+            "text": "Education"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/how-we-decide-which-ai-tools-to-teach-and-why-we-intentionally-skip-many-popular-ones/",
+            "text": "Read More..."
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/why-most-people-feel-overwhelmed-while-learning-ai-and-how-to-learn-without-burning-out/",
+            "text": "Why Most People Feel Overwhelmed While Learning AI (And How to Learn Without Burning Out)"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/2026/02/19/",
+            "text": "February 19, 2026"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/artificial-intelligence/",
+            "text": "Artificial Intelligence"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/education/",
+            "text": "Education"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/why-most-people-feel-overwhelmed-while-learning-ai-and-how-to-learn-without-burning-out/",
+            "text": "Read More..."
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/free-ai-tutorials-vs-structured-ai-programs-why-most-learners-feel-stuck-and-how-to-choose-correctly/",
+            "text": "Free AI Tutorials vs Structured AI Programs: Why Most Learners Feel Stuck (And How to Choose Correctly)"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/2026/02/19/",
+            "text": "February 19, 2026"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/artificial-intelligence/",
+            "text": "Artificial Intelligence"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/education/",
+            "text": "Education"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/free-ai-tutorials-vs-structured-ai-programs-why-most-learners-feel-stuck-and-how-to-choose-correctly/",
+            "text": "Read More..."
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/what-you-can-actually-build-after-an-ai-course-beyond-prompts-demos-and-theory/",
+            "text": "What You Can Actually Build After an AI Course (Beyond Prompts, Demos, and Theory)"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/2026/02/19/",
+            "text": "February 19, 2026"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/ai-tools/",
+            "text": "AI Tools"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/education/",
+            "text": "Education"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/what-you-can-actually-build-after-an-ai-course-beyond-prompts-demos-and-theory/",
+            "text": "Read More..."
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/is-learning-ai-online-actually-worth-it-in-2026-a-practical-evidence-based-reality-check/",
+            "text": "Is Learning AI Online Actually Worth It in 2026? A Practical & Evidence-Based Reality Check"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/2026/02/19/",
+            "text": "February 19, 2026"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/ai-tools/",
+            "text": "AI Tools"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/education/",
+            "text": "Education"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/is-learning-ai-online-actually-worth-it-in-2026-a-practical-evidence-based-reality-check/",
+            "text": "Read More..."
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/top-ai-marketing-strategies-to-boost-your-brand/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/top-ai-marketing-strategies-to-boost-your-brand/",
+            "text": "Top AI Marketing Strategies to Boost Your Brand"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/2025/07/22/",
+            "text": "July 22, 2025"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/ai-tools/",
+            "text": "AI Tools"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/category/artificial-intelligence/",
+            "text": "Artificial Intelligence"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/top-ai-marketing-strategies-to-boost-your-brand/",
+            "text": "Read More..."
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/",
+            "text": "Read All Blogs"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/about-us/",
+            "text": "Learn More"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/about-us/",
+            "text": "About Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/contact-us/",
+            "text": "Contact Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://forms.gle/hsuyDJ2FM3PT2mwi6",
+            "text": "Teach with Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/grow-with-us/",
+            "text": "Grow With Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/refund-policy/",
+            "text": "Cancellation/Refund Policy"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/privacy-policy/",
+            "text": "Privacy Policy"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/terms-of-use/",
+            "text": "Terms of use"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/guest-posting/",
+            "text": "Guest Posting"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/about-us/",
+            "text": "About Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/contact-us/",
+            "text": "Contact Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://forms.gle/hsuyDJ2FM3PT2mwi6",
+            "text": "Teach with Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/grow-with-us/",
+            "text": "Grow With Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/refund-policy/",
+            "text": "Cancellation/Refund Policy"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/privacy-policy/",
+            "text": "Privacy Policy"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/terms-of-use/",
+            "text": "Terms of use"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/guest-posting/",
+            "text": "Guest Posting"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/about-us/",
+            "text": "About Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://docs.google.com/forms/d/e/1FAIpQLSdTN31I2-BW2ANltXpnMvgikE3mQmBX_Poyk2qozohnw7DPfQ/viewform",
+            "text": "Teach with Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/grow-with-us/",
+            "text": "Grow With Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/guest-posting/",
+            "text": "Guest Posting"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/blog/",
+            "text": "Blogs"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/contact-us/",
+            "text": "Contact Us"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://wa.me/919147330989",
+            "text": "+91-9147330989"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/ai-tool-workshop/",
+            "text": "AI Tools Workshop"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/privacy-policy/",
+            "text": "Privacy Policy"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/terms-of-use/",
+            "text": "Terms of use"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://be10x.com/refund-policy/",
+            "text": "Refund Policy"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://wa.me/919147330989",
+            "text": "+91-9147330989"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://www.facebook.com/be10x",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://www.instagram.com/be10x.in/",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://twitter.com/Be10Xai",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://in.linkedin.com/company/be10x-in",
+            "text": "[Internal Link]"
+        },
+        {
+            "from": "https://be10x.com",
+            "to": "https://youtube.com/@be10x",
+            "text": "[Internal Link]"
+        }
+    ]
+}

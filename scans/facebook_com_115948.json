@@ -1,0 +1,250 @@
+{
+    "scan_start_time": "2026-03-03 11:59:50",
+    "target_ip": "163.70.144.35",
+    "target_port": 443,
+    "geo_intel": {
+        "status": "success",
+        "country": "India",
+        "city": "Mumbai",
+        "isp": "Facebook, Inc.",
+        "org": "Meta Platforms Ireland Limited",
+        "as": "AS32934 Facebook, Inc."
+    },
+    "open_ports": [
+        {
+            "port": 443,
+            "service": "https",
+            "banner": "\u0015\u0003\u0003\u0000\u0002\u00022"
+        },
+        {
+            "port": 80,
+            "service": "http",
+            "banner": "HTTP/1.1 301 Moved Permanently\r"
+        }
+    ],
+    "vpn_status": "No VPN Server Found",
+    "domain_dates": {
+        "created": "N/A"
+    },
+    "findings": {
+        "http_headers": {
+            "Vary": "Accept-Encoding",
+            "Set-Cookie": "fr=08KU1pP6b8EWRMcI9..Bppn_e..AAA.0.0.Bppn_e.AWcOarAQjbCFLFAFL21f1D8P8ZU; expires=Mon, 01-Jun-2026 06:29:50 GMT; Max-Age=7776000; path=/; domain=.facebook.com; secure; httponly",
+            "Accept-Ch-Lifetime": "4838400",
+            "Accept-Ch": "viewport-width,dpr,Sec-CH-Prefers-Color-Scheme,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Platform-Version,Sec-CH-UA-Model",
+            "Reporting-Endpoints": "coop_report=\"https://www.facebook.com/browser_reporting/coop/?minimize=0\", default=\"https://www.facebook.com/ajax/browser_error_reports/?device_level=unknown&brsid=7612912812244279541&cpp=C3&cv=1034372878&st=1772519390081\", permissions_policy=\"https://www.facebook.com/ajax/browser_error_reports/\"",
+            "Report-To": "{\"max_age\":2592000,\"endpoints\":[{\"url\":\"https:\\/\\/www.facebook.com\\/browser_reporting\\/coop\\/?minimize=0\"}],\"group\":\"coop_report\",\"include_subdomains\":true}, {\"max_age\":259200,\"endpoints\":[{\"url\":\"https:\\/\\/www.facebook.com\\/ajax\\/browser_error_reports\\/?device_level=unknown&brsid=7612912812244279541&cpp=C3&cv=1034372878&st=1772519390081\"}]}, {\"max_age\":21600,\"endpoints\":[{\"url\":\"https:\\/\\/www.facebook.com\\/ajax\\/browser_error_reports\\/\"}],\"group\":\"permissions_policy\"}",
+            "Content-Security-Policy": "default-src blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;script-src *.facebook.com *.fbcdn.net *.facebook.net 127.0.0.1:* 'nonce-xgaOvWGn' blob: 'self' connect.facebook.net 'unsafe-eval' https://*.google-analytics.com *.google.com;style-src *.fbcdn.net data: *.facebook.com 'unsafe-inline' https://fonts.googleapis.com;connect-src *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* wss://*.whatsapp.com:* wss://*.fbcdn.net attachment.fbsbx.com ws://localhost:* blob: *.cdninstagram.com 'self' http://localhost:3103 wss://gateway.facebook.com wss://edge-chat.facebook.com wss://snaptu-d.facebook.com wss://kaios-d.facebook.com/ v.whatsapp.net *.fbsbx.com *.fb.com *.instagram.com https://*.google-analytics.com;font-src data: *.facebook.com *.fbcdn.net *.fbsbx.com https://fonts.gstatic.com;img-src *.fbcdn.net *.facebook.com data: https://*.fbsbx.com facebook.com *.cdninstagram.com fbsbx.com fbcdn.net connect.facebook.net blob: android-webview-video-poster: *.whatsapp.net *.fb.com *.oculuscdn.com *.tenor.co *.tenor.com *.giphy.com https://trustly.one/ https://*.trustly.one/ https://paywithmybank.com/ https://*.paywithmybank.com/ https://www.googleadservices.com https://googleads.g.doubleclick.net https://*.google-analytics.com;media-src *.cdninstagram.com blob: *.fbcdn.net *.fbsbx.com www.facebook.com *.facebook.com data: *.tenor.co *.tenor.com https://*.giphy.com;child-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;frame-src *.facebook.com *.fbsbx.com fbsbx.com data: www.instagram.com *.fbcdn.net accounts.meta.com *.accounts.meta.com https://trustly.one/ https://*.trustly.one/ https://paywithmybank.com/ https://*.paywithmybank.com/ https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com https://td.doubleclick.net *.google.com *.doubleclick.net;manifest-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;object-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;worker-src blob: *.facebook.com data:;block-all-mixed-content;upgrade-insecure-requests;",
+            "X-Frame-Options": "DENY",
+            "Document-Policy": "force-load-at-top",
+            "Permissions-Policy": "accelerometer=(), attribution-reporting=(self), autoplay=(), bluetooth=(), browsing-topics=(self), camera=(self \"https://www.fbsbx.com\"), ch-device-memory=(), ch-downlink=(), ch-dpr=(), ch-ect=(), ch-rtt=(), ch-save-data=(), ch-ua-arch=(), ch-ua-bitness=(), ch-viewport-height=(), ch-viewport-width=(), ch-width=(), clipboard-read=(self), clipboard-write=(self), compute-pressure=(), display-capture=(self), encrypted-media=(self), fullscreen=(self), gamepad=*, geolocation=(self), gyroscope=(), hid=(), idle-detection=(), interest-cohort=(self), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(self), midi=(), otp-credentials=(), payment=(), picture-in-picture=(self), private-state-token-issuance=(), publickey-credentials-get=(self), screen-wake-lock=(), serial=(), shared-storage=(), shared-storage-select-url=(), private-state-token-redemption=(), usb=(), unload=(self), window-management=(), xr-spatial-tracking=(self);report-to=\"permissions_policy\"",
+            "Cross-Origin-Resource-Policy": "same-origin",
+            "Cross-Origin-Opener-Policy": "unsafe-none",
+            "Pragma": "no-cache",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate",
+            "Expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+            "X-Content-Type-Options": "nosniff",
+            "X-Xss-Protection": "0",
+            "Origin-Agent-Cluster": "?1",
+            "Strict-Transport-Security": "max-age=15552000; preload",
+            "Content-Type": "text/html; charset=\"utf-8\"",
+            "X-Fb-Debug": "4kcEEVlffk1PSZmJPoCjicz9IuyjguHhcGShXTas8TNoUzkacWb1tTs3vTNkqdoHbmiHnNb7/dEq8V2r9eKOQQ==",
+            "Date": "Tue, 03 Mar 2026 06:29:50 GMT",
+            "X-Fb-Connection-Quality": "EXCELLENT; q=0.9, rtt=22, rtx=0, c=10, mss=1392, tbw=4546, tp=-1, tpl=-1, uplat=224, ullat=0",
+            "Alt-Svc": "h3=\":443\"; ma=86400"
+        },
+        "server_software": "Unknown",
+        "operating_system": "Hidden",
+        "comments": [],
+        "proxy_detected": "No Proxy Found",
+        "security_header_audit": {
+            "Strict-Transport-Security": "max-age=15552000; preload",
+            "Content-Security-Policy": "default-src blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;script-src *.facebook.com *.fbcdn.net *.facebook.net 127.0.0.1:* 'nonce-xgaOvWGn' blob: 'self' connect.facebook.net 'unsafe-eval' https://*.google-analytics.com *.google.com;style-src *.fbcdn.net data: *.facebook.com 'unsafe-inline' https://fonts.googleapis.com;connect-src *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* wss://*.whatsapp.com:* wss://*.fbcdn.net attachment.fbsbx.com ws://localhost:* blob: *.cdninstagram.com 'self' http://localhost:3103 wss://gateway.facebook.com wss://edge-chat.facebook.com wss://snaptu-d.facebook.com wss://kaios-d.facebook.com/ v.whatsapp.net *.fbsbx.com *.fb.com *.instagram.com https://*.google-analytics.com;font-src data: *.facebook.com *.fbcdn.net *.fbsbx.com https://fonts.gstatic.com;img-src *.fbcdn.net *.facebook.com data: https://*.fbsbx.com facebook.com *.cdninstagram.com fbsbx.com fbcdn.net connect.facebook.net blob: android-webview-video-poster: *.whatsapp.net *.fb.com *.oculuscdn.com *.tenor.co *.tenor.com *.giphy.com https://trustly.one/ https://*.trustly.one/ https://paywithmybank.com/ https://*.paywithmybank.com/ https://www.googleadservices.com https://googleads.g.doubleclick.net https://*.google-analytics.com;media-src *.cdninstagram.com blob: *.fbcdn.net *.fbsbx.com www.facebook.com *.facebook.com data: *.tenor.co *.tenor.com https://*.giphy.com;child-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;frame-src *.facebook.com *.fbsbx.com fbsbx.com data: www.instagram.com *.fbcdn.net accounts.meta.com *.accounts.meta.com https://trustly.one/ https://*.trustly.one/ https://paywithmybank.com/ https://*.paywithmybank.com/ https://www.googleadservices.com https://googleads.g.doubleclick.net https://www.google.com https://td.doubleclick.net *.google.com *.doubleclick.net;manifest-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;object-src data: blob: 'self' https://*.fbsbx.com *.facebook.com *.fbcdn.net;worker-src blob: *.facebook.com data:;block-all-mixed-content;upgrade-insecure-requests;"
+        }
+    },
+    "sub_urls": [
+        "https://www.facebook.com/"
+    ],
+    "external_connections": [
+        "developers.facebook.com",
+        "l.facebook.com",
+        "www.facebook.com"
+    ],
+    "navigation_map": [
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/recover/initiate/?privacy_mutation_token=eyJ0eXBlIjo1LCJjcmVhdGlvbl90aW1lIjoxNzcyNTE5MzkwfQ%3D%3D&ars=facebook_login",
+            "text": "Forgotten password?"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/reg/?entry_point=login&next=",
+            "text": "Create new account"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/#",
+            "text": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4\u0ac0"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/#",
+            "text": "\u0939\u093f\u0928\u094d\u0926\u0940"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/#",
+            "text": "\u092e\u0930\u093e\u0920\u0940"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/#",
+            "text": "\u0627\u0631\u062f\u0648"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/#",
+            "text": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/#",
+            "text": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/#",
+            "text": "More languages\u2026"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/reg/",
+            "text": "Sign up"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/login/",
+            "text": "Log in"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://l.facebook.com/l.php?u=https%3A%2F%2Fmessenger.com%2F&h=AT4tpKdfJMo1rqpazoogBQHBAXK4kshm9COcc1i1TYnBqUMWkAgbjTwpIOfcyVDefIPgGbwkOntPeUYvzVBqyvO9ZQH1B-fGDjdTAmeXviwusj10xBSPYZSzjjbyZWdd9CIpwrXq4wWX74mj",
+            "text": "Messenger"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/lite/",
+            "text": "Facebook Lite"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/watch/",
+            "text": "Video"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.meta.com%2Ftechnologies%2Fmeta-pay&h=AT4tpKdfJMo1rqpazoogBQHBAXK4kshm9COcc1i1TYnBqUMWkAgbjTwpIOfcyVDefIPgGbwkOntPeUYvzVBqyvO9ZQH1B-fGDjdTAmeXviwusj10xBSPYZSzjjbyZWdd9CIpwrXq4wWX74mj",
+            "text": "Meta Pay"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2F&h=AT4tpKdfJMo1rqpazoogBQHBAXK4kshm9COcc1i1TYnBqUMWkAgbjTwpIOfcyVDefIPgGbwkOntPeUYvzVBqyvO9ZQH1B-fGDjdTAmeXviwusj10xBSPYZSzjjbyZWdd9CIpwrXq4wWX74mj",
+            "text": "Meta Store"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fquest%2F&h=AT4tpKdfJMo1rqpazoogBQHBAXK4kshm9COcc1i1TYnBqUMWkAgbjTwpIOfcyVDefIPgGbwkOntPeUYvzVBqyvO9ZQH1B-fGDjdTAmeXviwusj10xBSPYZSzjjbyZWdd9CIpwrXq4wWX74mj",
+            "text": "Meta Quest"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.com%2Fsmart-glasses%2F&h=AT4tpKdfJMo1rqpazoogBQHBAXK4kshm9COcc1i1TYnBqUMWkAgbjTwpIOfcyVDefIPgGbwkOntPeUYvzVBqyvO9ZQH1B-fGDjdTAmeXviwusj10xBSPYZSzjjbyZWdd9CIpwrXq4wWX74mj",
+            "text": "Ray-Ban Meta"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.ai%2F&h=AT4tpKdfJMo1rqpazoogBQHBAXK4kshm9COcc1i1TYnBqUMWkAgbjTwpIOfcyVDefIPgGbwkOntPeUYvzVBqyvO9ZQH1B-fGDjdTAmeXviwusj10xBSPYZSzjjbyZWdd9CIpwrXq4wWX74mj",
+            "text": "Meta AI"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.meta.ai%2Fpages%2Fdigital-photo-frames-innovative-designs-and-features%2F%3Futm_source%3Dfoa_web_footer&h=AT4tpKdfJMo1rqpazoogBQHBAXK4kshm9COcc1i1TYnBqUMWkAgbjTwpIOfcyVDefIPgGbwkOntPeUYvzVBqyvO9ZQH1B-fGDjdTAmeXviwusj10xBSPYZSzjjbyZWdd9CIpwrXq4wWX74mj",
+            "text": "Meta AI more content"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F&h=AT4tpKdfJMo1rqpazoogBQHBAXK4kshm9COcc1i1TYnBqUMWkAgbjTwpIOfcyVDefIPgGbwkOntPeUYvzVBqyvO9ZQH1B-fGDjdTAmeXviwusj10xBSPYZSzjjbyZWdd9CIpwrXq4wWX74mj",
+            "text": "Instagram"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.threads.com%2F&h=AT4tpKdfJMo1rqpazoogBQHBAXK4kshm9COcc1i1TYnBqUMWkAgbjTwpIOfcyVDefIPgGbwkOntPeUYvzVBqyvO9ZQH1B-fGDjdTAmeXviwusj10xBSPYZSzjjbyZWdd9CIpwrXq4wWX74mj",
+            "text": "Threads"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D",
+            "text": "Voting Information Centre"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/privacy/policy/?entry_point=facebook_page_footer",
+            "text": "Privacy Policy"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/privacy/center/?entry_point=facebook_page_footer",
+            "text": "Privacy Centre"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/about/",
+            "text": "About"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&nav_source=unknown&extra_1=auto",
+            "text": "Create ad"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/pages/create/?ref_type=site_footer",
+            "text": "Create Page"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://developers.facebook.com/?ref=pf",
+            "text": "Developers"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/careers/?ref=pf",
+            "text": "Careers"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/policies/cookies/",
+            "text": "Cookies"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/help/568137493302217",
+            "text": "AdChoices"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/policies?ref=pf",
+            "text": "Terms"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/help/?ref=pf",
+            "text": "Help"
+        },
+        {
+            "from": "https://www.facebook.com/",
+            "to": "https://www.facebook.com/help/637205020878504",
+            "text": "Contact uploading and non-users"
+        }
+    ]
+}

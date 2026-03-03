@@ -1,0 +1,163 @@
+{
+    "scan_start_time": "2026-03-03 11:59:50",
+    "target_ip": "57.144.242.34",
+    "target_port": 443,
+    "geo_intel": {
+        "status": "success",
+        "country": "India",
+        "city": "Mumbai",
+        "isp": "Facebook, Inc.",
+        "org": "Meta Platforms Ireland Limited",
+        "as": "AS32934 Facebook, Inc."
+    },
+    "open_ports": [
+        {
+            "port": 80,
+            "service": "http",
+            "banner": "HTTP/1.1 301 Moved Permanently\r"
+        },
+        {
+            "port": 443,
+            "service": "https",
+            "banner": "\u0015\u0003\u0003\u0000\u0002\u00022"
+        }
+    ],
+    "vpn_status": "No VPN Server Found",
+    "domain_dates": {
+        "created": "N/A"
+    },
+    "findings": {
+        "http_headers": {
+            "Vary": "Accept-Encoding",
+            "Set-Cookie": "csrftoken=D9oYN94a2XmPfz-tSLA1FE; expires=Wed, 07-Apr-2027 06:29:50 GMT; Max-Age=34560000; path=/; domain=.instagram.com; secure",
+            "Accept-Ch-Lifetime": "4838400",
+            "Accept-Ch": "viewport-width,dpr,Sec-CH-Prefers-Color-Scheme,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Platform-Version,Sec-CH-UA-Model",
+            "Reporting-Endpoints": "coop_report=\"https://www.facebook.com/browser_reporting/coop/?minimize=0\", default=\"https://www.instagram.com/error/ig_web_error_reports/?device_level=unknown&brsid=7612912813267031779&comet_app_key=7&cpp=C3&cv=1034371789&st=1772519390061\", permissions_policy=\"https://www.instagram.com/error/ig_web_error_reports/\"",
+            "Report-To": "{\"max_age\":2592000,\"endpoints\":[{\"url\":\"https:\\/\\/www.facebook.com\\/browser_reporting\\/coop\\/?minimize=0\"}],\"group\":\"coop_report\",\"include_subdomains\":true}, {\"max_age\":259200,\"endpoints\":[{\"url\":\"https:\\/\\/www.instagram.com\\/error\\/ig_web_error_reports\\/?device_level=unknown&brsid=7612912813267031779&comet_app_key=7&cpp=C3&cv=1034371789&st=1772519390061\"}]}, {\"max_age\":21600,\"endpoints\":[{\"url\":\"https:\\/\\/www.instagram.com\\/error\\/ig_web_error_reports\\/\"}],\"group\":\"permissions_policy\"}",
+            "Content-Security-Policy-Report-Only": "default-src *.facebook.com *.fbcdn.net *.instagram.com blob:;script-src *.instagram.com static.cdninstagram.com *.facebook.com *.fbcdn.net *.facebook.net 127.0.0.1:* 'nonce-9UqWy2e8' blob: 'self' https://*.google-analytics.com https://translate.google.com https://apis.google.com https://accounts.google.com 'report-sample';style-src *.instagram.com static.cdninstagram.com data: blob: 'unsafe-inline' *.fbcdn.net *.facebook.com;connect-src *.instagram.com wss://edge-chat.instagram.com connect.facebook.net *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* ws://localhost:* blob: *.cdninstagram.com wss://*.instagram.com:* 'self' https://meta.privacy-gateway.cloudflare.com/relay;font-src *.instagram.com static.cdninstagram.com data: *.fbcdn.net *.intern.facebook.com *.facebook.com https://fonts.gstatic.com;img-src *.instagram.com *.facebook.com *.fbcdn.net data: *.cdninstagram.com *.whatsapp.net blob: *.fbsbx.com android-webview-video-poster: *.oculuscdn.com *.giphy.com *.tenor.co *.tenor.com www.googleadservices.com *.doubleclick.net *.google.com *.google.co.uk https://www.gstatic.com https://*.google-analytics.com;media-src *.facebook.com *.fbcdn.net *.instagram.com *.cdninstagram.com *.fbsbx.com data: blob: https://*.giphy.com *.tenor.co *.tenor.com;child-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;frame-src *.instagram.com *.facebook.com *.fbsbx.com fbsbx.com data: www.googleadservices.com *.doubleclick.net *.google.com *.google.co.uk;manifest-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;object-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;block-all-mixed-content;report-uri https://www.facebook.com/csp/reporting/?minimize=0;",
+            "Content-Security-Policy": "default-src *.facebook.com *.fbcdn.net *.instagram.com blob:;script-src *.instagram.com static.cdninstagram.com *.facebook.com *.fbcdn.net *.facebook.net 127.0.0.1:* 'nonce-9UqWy2e8' blob: 'self' 'unsafe-eval' https://*.google-analytics.com https://translate.google.com https://apis.google.com https://accounts.google.com;style-src *.instagram.com static.cdninstagram.com data: blob: 'unsafe-inline' *.fbcdn.net *.facebook.com;connect-src *.instagram.com wss://edge-chat.instagram.com connect.facebook.net *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* ws://localhost:* blob: *.cdninstagram.com wss://*.instagram.com:* 'self' https://meta.privacy-gateway.cloudflare.com/relay;font-src *.instagram.com static.cdninstagram.com data: *.fbcdn.net *.intern.facebook.com *.facebook.com https://fonts.gstatic.com;img-src *.instagram.com *.facebook.com *.fbcdn.net data: *.cdninstagram.com *.whatsapp.net blob: *.fbsbx.com android-webview-video-poster: *.oculuscdn.com *.giphy.com *.tenor.co *.tenor.com www.googleadservices.com *.doubleclick.net *.google.com *.google.co.uk https://www.gstatic.com https://*.google-analytics.com;media-src *.facebook.com *.fbcdn.net *.instagram.com *.cdninstagram.com *.fbsbx.com data: blob: https://*.giphy.com *.tenor.co *.tenor.com;child-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;frame-src *.instagram.com *.facebook.com *.fbsbx.com fbsbx.com data: www.googleadservices.com *.doubleclick.net *.google.com *.google.co.uk;manifest-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;object-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;block-all-mixed-content;upgrade-insecure-requests;",
+            "X-Frame-Options": "DENY",
+            "Document-Policy": "force-load-at-top",
+            "Permissions-Policy": "accelerometer=(self), attribution-reporting=(), autoplay=(), bluetooth=(), camera=(self), ch-device-memory=(), ch-downlink=(), ch-dpr=(), ch-ect=(), ch-rtt=(), ch-save-data=(), ch-ua-arch=(), ch-ua-bitness=(), ch-viewport-height=(), ch-viewport-width=(), ch-width=(), clipboard-read=(), clipboard-write=(self), compute-pressure=(), display-capture=(self), encrypted-media=(), fullscreen=(self), gamepad=(), geolocation=(self), gyroscope=(self), hid=(), idle-detection=(), interest-cohort=(), keyboard-map=(), local-fonts=(), magnetometer=(), microphone=(self), midi=(), otp-credentials=(self), payment=(), picture-in-picture=(self), private-state-token-issuance=(), publickey-credentials-get=(self \"https://*.facebook.com\" \"https://facebook.com\"), screen-wake-lock=(), serial=(), shared-storage=(), shared-storage-select-url=(), private-state-token-redemption=(), usb=(), unload=(self), window-management=(), xr-spatial-tracking=();report-to=\"permissions_policy\"",
+            "Cross-Origin-Resource-Policy": "same-origin",
+            "Origin-Trial": "ArDvqjFKr1fHThlSM8Kkp74sxlOCFTeqYJMXCGqCG/VJmcYlO/0UavmpqPDit2KppDf1THInNpwA36GmtgPOug8AAAB2eyJvcmlnaW4iOiJodHRwczovL3d3dy5pbnN0YWdyYW0uY29tOjQ0MyIsImZlYXR1cmUiOiJDcmFzaFJlcG9ydGluZ1N0b3JhZ2VBUEkiLCJleHBpcnkiOjE3NzY3Mjk2MDAsImlzU3ViZG9tYWluIjp0cnVlfQ==",
+            "Cross-Origin-Opener-Policy": "unsafe-none",
+            "Pragma": "no-cache",
+            "Cache-Control": "private, no-cache, no-store, must-revalidate",
+            "Expires": "Sat, 01 Jan 2000 00:00:00 GMT",
+            "X-Content-Type-Options": "nosniff",
+            "X-Xss-Protection": "0",
+            "Origin-Agent-Cluster": "?1",
+            "Strict-Transport-Security": "max-age=31536000; preload; includeSubDomains",
+            "X-Stack": "www",
+            "Content-Type": "text/html; charset=\"utf-8\"",
+            "X-Fb-Debug": "MCK/X8xmJBKN2bVj5Kkp5lMHEUd8QSjUE2mUS3AphkPwHcEiVm0H+SQCXXyiUgyDf0dxWd/2kDrs1isehqEeQQ==",
+            "Date": "Tue, 03 Mar 2026 06:29:50 GMT",
+            "Alt-Svc": "h3=\":443\"; ma=86400",
+            "X-Fb-Connection-Quality": "EXCELLENT; q=0.9, rtt=20, rtx=0, c=15, mss=1392, tbw=4810, tp=-1, tpl=-1, uplat=267, ullat=0"
+        },
+        "server_software": "Unknown",
+        "operating_system": "Hidden",
+        "comments": [],
+        "proxy_detected": "No Proxy Found",
+        "security_header_audit": {
+            "Strict-Transport-Security": "max-age=31536000; preload; includeSubDomains",
+            "Content-Security-Policy": "default-src *.facebook.com *.fbcdn.net *.instagram.com blob:;script-src *.instagram.com static.cdninstagram.com *.facebook.com *.fbcdn.net *.facebook.net 127.0.0.1:* 'nonce-9UqWy2e8' blob: 'self' 'unsafe-eval' https://*.google-analytics.com https://translate.google.com https://apis.google.com https://accounts.google.com;style-src *.instagram.com static.cdninstagram.com data: blob: 'unsafe-inline' *.fbcdn.net *.facebook.com;connect-src *.instagram.com wss://edge-chat.instagram.com connect.facebook.net *.facebook.com facebook.com *.fbcdn.net *.facebook.net wss://*.facebook.com:* ws://localhost:* blob: *.cdninstagram.com wss://*.instagram.com:* 'self' https://meta.privacy-gateway.cloudflare.com/relay;font-src *.instagram.com static.cdninstagram.com data: *.fbcdn.net *.intern.facebook.com *.facebook.com https://fonts.gstatic.com;img-src *.instagram.com *.facebook.com *.fbcdn.net data: *.cdninstagram.com *.whatsapp.net blob: *.fbsbx.com android-webview-video-poster: *.oculuscdn.com *.giphy.com *.tenor.co *.tenor.com www.googleadservices.com *.doubleclick.net *.google.com *.google.co.uk https://www.gstatic.com https://*.google-analytics.com;media-src *.facebook.com *.fbcdn.net *.instagram.com *.cdninstagram.com *.fbsbx.com data: blob: https://*.giphy.com *.tenor.co *.tenor.com;child-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;frame-src *.instagram.com *.facebook.com *.fbsbx.com fbsbx.com data: www.googleadservices.com *.doubleclick.net *.google.com *.google.co.uk;manifest-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;object-src *.facebook.com *.fbcdn.net *.instagram.com data: blob:;block-all-mixed-content;upgrade-insecure-requests;"
+        }
+    },
+    "sub_urls": [
+        "https://www.instagram.com/"
+    ],
+    "external_connections": [
+        "about.instagram.com",
+        "about.meta.com",
+        "developers.facebook.com",
+        "help.instagram.com",
+        "www.facebook.com",
+        "www.instagram.com",
+        "www.meta.ai",
+        "www.threads.com"
+    ],
+    "navigation_map": [
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://www.instagram.com/accounts/password/reset/",
+            "text": "Forgot password?"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://www.instagram.com/accounts/emailsignup/?next=",
+            "text": "Create new account"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://about.meta.com/",
+            "text": "Meta"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://about.instagram.com/",
+            "text": "About"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://about.instagram.com/blog/",
+            "text": "Blog"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://about.instagram.com/about-us/careers",
+            "text": "Jobs"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://help.instagram.com/",
+            "text": "Help"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://developers.facebook.com/docs/instagram",
+            "text": "API"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://www.instagram.com/legal/privacy/",
+            "text": "Privacy"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://www.instagram.com/legal/terms/",
+            "text": "Terms"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://www.instagram.com/explore/locations/",
+            "text": "Locations"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://www.instagram.com/web/lite/",
+            "text": "Instagram Lite"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://www.meta.ai/?utm_source=foa_web_footer",
+            "text": "Meta AI"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://www.threads.com/",
+            "text": "Threads"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://www.facebook.com/help/instagram/261704639352628",
+            "text": "Contact Uploading & Non-Users"
+        },
+        {
+            "from": "https://www.instagram.com/",
+            "to": "https://www.instagram.com/accounts/meta_verified/?entrypoint=web_footer",
+            "text": "Meta Verified"
+        }
+    ]
+}

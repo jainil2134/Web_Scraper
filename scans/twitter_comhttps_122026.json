@@ -1,0 +1,20 @@
+{
+    "scan_start_time": "2026-03-03 12:20:26",
+    "target_ip": "Resolution Failed",
+    "target_port": 443,
+    "geo_intel": {},
+    "open_ports": [],
+    "vpn_status": "No VPN Server Found",
+    "domain_dates": {},
+    "findings": {
+        "http_headers": {},
+        "server_software": "Unknown",
+        "operating_system": "Unknown",
+        "comments": [],
+        "proxy_detected": "No Proxy Found",
+        "security_header_audit": {}
+    },
+    "sub_urls": [],
+    "external_connections": [],
+    "navigation_map": []
+}
